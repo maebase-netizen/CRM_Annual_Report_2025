@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400;1,6..72,500&family=Space+Grotesk:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; }
+  ::selection { background: #9A2A34; color: #F2EEE4; }
+  @keyframes crm-rise { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
+  @keyframes crm-fade { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes crm-modal { from { opacity: 0; transform: translateY(18px) scale(.985); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) {
+    [style*="crm-rise"], [style*="crm-fade"], [style*="crm-modal"] { animation: none !important; opacity: 1 !important; transform: none !important; }
+  }
+  image-slot { display: block; }
+
+.crm-gcard:hover{transform:translateY(-6px)!important;background:#ffffff!important;border-top-color:#9A2A34!important;}
+</style>
+</head>
+<body style="margin:0;">
+<div style="background:#F2EEE4; color:#17140F; font-family:'Space Grotesk',sans-serif; -webkit-font-smoothing:antialiased; overflow-x:hidden; position:relative;">
+
+  <!-- ===================== BANNER ===================== -->
+  <header style="position:relative; width:100%; height:clamp(380px,60vh,660px); overflow:hidden; background:#0F0D0A;">
+    <img src="https://www.crm.cat/wp-content/uploads/2026/07/20251021_CRM076_ANDREUPUIG.jpg" alt="Centre de Recerca Matemàtica building at dusk" data-parallax="0.08" style="position:absolute; left:0; top:-10%; width:100%; height:120%; object-fit:cover; object-position:center 40%; will-change:transform;">
+    <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(15,13,10,0.20) 0%, rgba(15,13,10,0.05) 40%, rgba(15,13,10,0.30) 62%, rgba(15,13,10,0.82) 100%);"></div>
+    <div style="position:absolute; left:0; right:0; bottom:0; padding:clamp(26px,5vw,68px) clamp(20px,6vw,96px); color:#F2EEE4; z-index:2;">
+      <div style="font-family:'Space Mono',monospace; font-size:clamp(11px,1.3vw,13px); letter-spacing:0.22em; text-transform:uppercase; color:rgba(242,238,228,0.82); margin-bottom:clamp(14px,2vw,22px); animation:crm-fade 1.1s ease .1s both;">Centre de Recerca Matemàtica · Bellaterra · Est. 1984</div>
+      <h1 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(46px,9vw,124px); line-height:0.9; letter-spacing:-0.02em; margin:0; text-shadow:0 2px 30px rgba(0,0,0,0.35); animation:crm-rise 1s cubic-bezier(.2,.7,.2,1) .2s both;">Annual Report <span style="font-style:italic; color:#F0B9BD;">2025</span></h1>
+    </div>
+  </header>
+
+  <!-- ===================== FOREWORD ===================== -->
+  <section style="padding:clamp(56px,9vw,120px) clamp(20px,6vw,96px); border-bottom:1px solid rgba(23,20,15,0.14);">
+    <div style="display:grid; grid-template-columns:minmax(0,0.5fr) minmax(0,1fr); gap:clamp(28px,5vw,72px); align-items:start; max-width:1400px; margin:0 auto;">
+      <div data-reveal style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34;">
+        <img src="https://www.crm.cat/wp-content/uploads/2026/07/carme.png" alt="Carme Cascante, Director of the CRM, at her desk" style="width:100%; max-width:280px; aspect-ratio:4/5; object-fit:cover; object-position:center 18%; border-radius:6px; display:block; margin-bottom:22px;">
+        <div style="font-weight:700; margin-bottom:10px;">Director’s Foreword</div>
+        <div style="color:#8a5a5f;">Carme Cascante<br>Director, CRM</div>
+      </div>
+      <div>
+        <p data-reveal style="font-family:'Newsreader',serif; font-weight:300; font-size:clamp(22px,3vw,38px); line-height:1.32; letter-spacing:-0.01em; margin:0 0 30px;">“2025 was a <em style="color:#9A2A34;">productive year</em> for our research — and a year in which we set out where the institution is heading through our new 2026–2030 Strategic Plan.”</p>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:22px 40px; max-width:820px;">
+          <p data-reveal data-delay="80" style="font-size:15.5px; line-height:1.65; color:#4A443B; margin:0;">Our scientific programme is now organised around four core areas — <strong style="color:#17140F; font-weight:600;">algebra &amp; geometry</strong>, <strong style="color:#17140F; font-weight:600;">analysis, PDEs &amp; dynamical systems</strong>, <strong style="color:#17140F; font-weight:600;">mathematical modelling</strong> and <strong style="color:#17140F; font-weight:600;">combinatorics</strong> — with flagship work at the intersection of AI and mathematics.</p>
+          <p data-reveal data-delay="160" style="font-size:15.5px; line-height:1.65; color:#4A443B; margin:0;">In December the centre successfully completed its four-year CERCA evaluation. We launched the CRM–MdM Chair of Excellence to host senior women researchers, and continued our public engagement through the podcast <em>Ments Meravelloses</em> and the blog <em>El Gegant del π</em>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== KEY NUMBERS ===================== -->
+  <section style="background:#9A2A34; color:#F7F1EA; padding:clamp(60px,9vw,128px) clamp(20px,6vw,96px); position:relative; overflow:hidden;">
+    <div style="position:absolute; inset:0; background-image:linear-gradient(rgba(247,241,234,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(247,241,234,0.06) 1px, transparent 1px); background-size:44px 44px; pointer-events:none;"></div>
+    <div style="position:relative; max-width:1400px; margin:0 auto;">
+      <div data-reveal style="display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; gap:16px; margin-bottom:clamp(36px,6vw,72px);">
+        <h2 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(30px,5vw,60px); letter-spacing:-0.02em; margin:0;">CRM in numbers</h2>
+        <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:rgba(247,241,234,0.7);">The 2025 figures at a glance</div>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(212px,1fr)); gap:1px; background:rgba(247,241,234,0.22); border:1px solid rgba(247,241,234,0.22);">
+        <div style="background:#9A2A34; padding:clamp(24px,2.8vw,40px) clamp(18px,2.4vw,32px);">
+          <div style="font-family:'Space Mono',monospace; font-weight:700; font-size:clamp(40px,5.2vw,78px); line-height:1; letter-spacing:-0.03em; color:#F7F1EA;"><span data-count="140">140</span></div>
+          <div style="margin-top:16px; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(247,241,234,0.72);">Publications</div>
+        </div>
+        <div style="background:#9A2A34; padding:clamp(24px,2.8vw,40px) clamp(18px,2.4vw,32px);">
+          <div style="font-family:'Space Mono',monospace; font-weight:700; font-size:clamp(40px,5.2vw,78px); line-height:1; letter-spacing:-0.03em; color:#F7F1EA;"><span data-count="24">24</span></div>
+          <div style="margin-top:16px; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(247,241,234,0.72);">PhD theses defended</div>
+        </div>
+        <div style="background:#9A2A34; padding:clamp(24px,2.8vw,40px) clamp(18px,2.4vw,32px);">
+          <div style="font-family:'Space Mono',monospace; font-weight:700; font-size:clamp(40px,5.2vw,78px); line-height:1; letter-spacing:-0.03em; color:#F7F1EA;"><span data-count="54">54</span></div>
+          <div style="margin-top:16px; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(247,241,234,0.72);">Research activities</div>
+        </div>
+        <div style="background:#9A2A34; padding:clamp(24px,2.8vw,40px) clamp(18px,2.4vw,32px);">
+          <div style="font-family:'Space Mono',monospace; font-weight:700; font-size:clamp(40px,5.2vw,78px); line-height:1; letter-spacing:-0.03em; color:#F7F1EA;"><span data-count="1400" data-suffix="+">1,400+</span></div>
+          <div style="margin-top:16px; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(247,241,234,0.72);">Participants</div>
+        </div>
+        <div style="background:#9A2A34; padding:clamp(24px,2.8vw,40px) clamp(18px,2.4vw,32px);">
+          <div style="font-family:'Space Mono',monospace; font-weight:700; font-size:clamp(40px,5.2vw,78px); line-height:1; letter-spacing:-0.03em; color:#F7F1EA;"><span data-count="66">66</span></div>
+          <div style="margin-top:16px; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(247,241,234,0.72);">Countries · 6 continents</div>
+        </div>
+        <div style="background:#9A2A34; padding:clamp(24px,2.8vw,40px) clamp(18px,2.4vw,32px);">
+          <div style="font-family:'Space Mono',monospace; font-weight:700; font-size:clamp(40px,5.2vw,78px); line-height:1; letter-spacing:-0.03em; color:#F7F1EA;"><span data-count="10">10</span></div>
+          <div style="margin-top:16px; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(247,241,234,0.72);">Research groups</div>
+        </div>
+        <div style="background:#9A2A34; padding:clamp(24px,2.8vw,40px) clamp(18px,2.4vw,32px);">
+          <div style="font-family:'Space Mono',monospace; font-weight:700; font-size:clamp(40px,5.2vw,78px); line-height:1; letter-spacing:-0.03em; color:#F7F1EA;"><span data-count="3.25" data-decimals="2" data-prefix="€" data-suffix="M">€3.25M</span></div>
+          <div style="margin-top:16px; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(247,241,234,0.72);">Total revenue · balanced</div>
+        </div>
+        <div style="background:#9A2A34; padding:clamp(24px,2.8vw,40px) clamp(18px,2.4vw,32px);">
+          <div style="font-family:'Space Mono',monospace; font-weight:700; font-size:clamp(40px,5.2vw,78px); line-height:1; letter-spacing:-0.03em; color:#F7F1EA;"><span data-count="28">28</span></div>
+          <div style="margin-top:16px; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(247,241,234,0.72);">Outreach blog posts</div>
+        </div>
+        <div style="background:#9A2A34; padding:clamp(24px,2.8vw,40px) clamp(18px,2.4vw,32px);">
+          <div style="font-family:'Space Mono',monospace; font-weight:700; font-size:clamp(40px,5.2vw,78px); line-height:1; letter-spacing:-0.03em; color:#F7F1EA;"><span data-count="2000" data-suffix="+">2,000+</span></div>
+          <div style="margin-top:16px; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(247,241,234,0.72);">Blog views · El Gegant del π</div>
+        </div>
+        <div style="background:#9A2A34; padding:clamp(24px,2.8vw,40px) clamp(18px,2.4vw,32px);">
+          <div style="font-family:'Space Mono',monospace; font-weight:700; font-size:clamp(40px,5.2vw,78px); line-height:1; letter-spacing:-0.03em; color:#F7F1EA;"><span data-count="5">5</span></div>
+          <div style="margin-top:16px; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(247,241,234,0.72);">Types of activity</div>
+          <div style="margin-top:10px; font-family:'Space Mono',monospace; font-size:11px; line-height:1.7; letter-spacing:0.04em; color:rgba(247,241,234,0.6);">Conferences · Workshops · Colloquia<br>Advanced &amp; BGSMath courses</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== VISITORS MAP ===================== -->
+  <section style="padding:clamp(56px,9vw,120px) clamp(20px,6vw,96px); border-top:1px solid rgba(23,20,15,0.14);">
+    <div style="max-width:1400px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:clamp(28px,5vw,64px); align-items:center;">
+      <div data-reveal>
+        <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:18px;">A global community</div>
+        <h2 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(30px,4.6vw,56px); line-height:1.03; letter-spacing:-0.02em; margin:0 0 20px;">From <span style="font-style:italic; color:#9A2A34;">66 countries</span>, across six continents.</h2>
+        <p style="font-size:clamp(15px,1.7vw,19px); line-height:1.6; color:#4A443B; margin:0 0 26px; max-width:46ch;">In 2025 the CRM welcomed researchers and students from around the world for programmes, schools and extended research stays — over 1,400 participants in all.</p>
+        <div style="display:flex; align-items:center; gap:20px; flex-wrap:wrap; font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.06em; color:#4A443B;">
+          <span style="display:inline-flex; align-items:center; gap:9px;"><span style="width:14px; height:14px; background:#a5082e; border-radius:3px; display:inline-block;"></span>Represented in 2025</span>
+          <span style="display:inline-flex; align-items:center; gap:9px;"><span style="width:14px; height:14px; background:#d1dbdd; border-radius:3px; display:inline-block;"></span>Not represented</span>
+        </div>
+      </div>
+      <div data-reveal>
+        <img src="https://www.crm.cat/wp-content/uploads/2026/07/MapChart_Map.png" alt="World map highlighting the 66 countries CRM visitors came from in 2025" style="width:100%; height:auto; display:block;">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RESEARCH ===================== -->
+  <section style="padding:clamp(60px,9vw,130px) clamp(20px,6vw,96px);">
+    <div style="max-width:1400px; margin:0 auto;">
+      <div data-reveal style="max-width:900px; margin-bottom:clamp(32px,5vw,52px);">
+        <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:18px;">02 — Research</div>
+        <h2 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(30px,5.4vw,64px); line-height:1.02; letter-spacing:-0.02em; margin:0 0 20px;">Ten groups, one <span style="font-style:italic; color:#9A2A34;">mathematical hub</span>.</h2>
+        <p style="font-size:clamp(15px,1.7vw,19px); line-height:1.6; color:#4A443B; margin:0;">CRM researchers are based at the centre and across Barcelona’s universities — the UAB, UPC and UB — with several holding ICREA affiliations, and they converge on the CRM through shared programmes, seminars, visiting scientists and its graduate school. <strong style="font-weight:600; color:#17140F;">Select a group</strong> to see its members, projects and publications.</p>
+      </div>
+      <div data-reveal style="position:relative; overflow:hidden; border-radius:5px; height:clamp(200px,30vw,400px); margin-bottom:clamp(40px,6vw,72px);">
+        <img src="https://www.crm.cat/wp-content/uploads/2026/06/2-2.png" alt="CRM Matemàtica signage in the centre’s corridor" data-parallax="0.06" style="position:absolute; left:0; top:-9%; width:100%; height:118%; object-fit:cover; object-position:center 44%; will-change:transform;">
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:1px; background:rgba(23,20,15,0.14); border:1px solid rgba(23,20,15,0.14);">
+        <div class="crm-gcard" data-group="0" role="button" tabindex="0" style="background:#FBFAF5; padding:clamp(24px,2.6vw,38px); border-top:3px solid transparent; cursor:pointer; display:flex; flex-direction:column; min-height:230px; transition:transform .4s cubic-bezier(.2,.7,.2,1), background .35s ease, border-color .35s ease;"><div style="display:flex; justify-content:space-between; align-items:center;"><div style="font-family:'Space Mono',monospace; font-size:13px; color:#9A2A34; letter-spacing:0.1em;">01</div><div style="font-family:'Space Mono',monospace; font-size:16px; color:#c9b8a0;">&#8594;</div></div><h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(20px,1.9vw,26px); line-height:1.12; letter-spacing:-0.01em; margin:16px 0 12px;">Algebra and Algebraic Geometry</h3><p style="font-size:14px; line-height:1.55; color:#4A443B; margin:0 0 auto;">Non-commutative and commutative algebra, moduli spaces, Arakelov geometry and abelian varieties.</p><div style="margin-top:20px; padding-top:16px; border-top:1px solid rgba(23,20,15,0.1); font-family:'Space Mono',monospace; font-size:11.5px; letter-spacing:0.08em; text-transform:uppercase; color:#8a5a5f;">15 researchers &middot; 12 publications</div></div>
+<div class="crm-gcard" data-group="1" role="button" tabindex="0" style="background:#FBFAF5; padding:clamp(24px,2.6vw,38px); border-top:3px solid transparent; cursor:pointer; display:flex; flex-direction:column; min-height:230px; transition:transform .4s cubic-bezier(.2,.7,.2,1), background .35s ease, border-color .35s ease;"><div style="display:flex; justify-content:space-between; align-items:center;"><div style="font-family:'Space Mono',monospace; font-size:13px; color:#9A2A34; letter-spacing:0.1em;">02</div><div style="font-family:'Space Mono',monospace; font-size:16px; color:#c9b8a0;">&#8594;</div></div><h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(20px,1.9vw,26px); line-height:1.12; letter-spacing:-0.01em; margin:16px 0 12px;">Geometry and Topology</h3><p style="font-size:14px; line-height:1.55; color:#4A443B; margin:0 0 auto;">Differential and symplectic geometry, algebraic topology — including an abstract “fluid computer.”</p><div style="margin-top:20px; padding-top:16px; border-top:1px solid rgba(23,20,15,0.1); font-family:'Space Mono',monospace; font-size:11.5px; letter-spacing:0.08em; text-transform:uppercase; color:#8a5a5f;">12 researchers &middot; 8 publications</div></div>
+<div class="crm-gcard" data-group="2" role="button" tabindex="0" style="background:#FBFAF5; padding:clamp(24px,2.6vw,38px); border-top:3px solid transparent; cursor:pointer; display:flex; flex-direction:column; min-height:230px; transition:transform .4s cubic-bezier(.2,.7,.2,1), background .35s ease, border-color .35s ease;"><div style="display:flex; justify-content:space-between; align-items:center;"><div style="font-family:'Space Mono',monospace; font-size:13px; color:#9A2A34; letter-spacing:0.1em;">03</div><div style="font-family:'Space Mono',monospace; font-size:16px; color:#c9b8a0;">&#8594;</div></div><h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(20px,1.9vw,26px); line-height:1.12; letter-spacing:-0.01em; margin:16px 0 12px;">Number Theory</h3><p style="font-size:14px; line-height:1.55; color:#4A443B; margin:0 0 auto;">Deep arithmetic phenomena through the lens of the Langlands Program — Galois representations, automorphic forms and abelian varieties.</p><div style="margin-top:20px; padding-top:16px; border-top:1px solid rgba(23,20,15,0.1); font-family:'Space Mono',monospace; font-size:11.5px; letter-spacing:0.08em; text-transform:uppercase; color:#8a5a5f;">7 researchers &middot; 8 publications</div></div>
+<div class="crm-gcard" data-group="3" role="button" tabindex="0" style="background:#FBFAF5; padding:clamp(24px,2.6vw,38px); border-top:3px solid transparent; cursor:pointer; display:flex; flex-direction:column; min-height:230px; transition:transform .4s cubic-bezier(.2,.7,.2,1), background .35s ease, border-color .35s ease;"><div style="display:flex; justify-content:space-between; align-items:center;"><div style="font-family:'Space Mono',monospace; font-size:13px; color:#9A2A34; letter-spacing:0.1em;">04</div><div style="font-family:'Space Mono',monospace; font-size:16px; color:#c9b8a0;">&#8594;</div></div><h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(20px,1.9vw,26px); line-height:1.12; letter-spacing:-0.01em; margin:16px 0 12px;">Mathematical and Computational Biology</h3><p style="font-size:14px; line-height:1.55; color:#4A443B; margin:0 0 auto;">New theory, models and tools for biologists and clinicians — multiscale models, dynamical systems and machine learning.</p><div style="margin-top:20px; padding-top:16px; border-top:1px solid rgba(23,20,15,0.1); font-family:'Space Mono',monospace; font-size:11.5px; letter-spacing:0.08em; text-transform:uppercase; color:#8a5a5f;">7 researchers &middot; 9 publications</div></div>
+<div class="crm-gcard" data-group="4" role="button" tabindex="0" style="background:#FBFAF5; padding:clamp(24px,2.6vw,38px); border-top:3px solid transparent; cursor:pointer; display:flex; flex-direction:column; min-height:230px; transition:transform .4s cubic-bezier(.2,.7,.2,1), background .35s ease, border-color .35s ease;"><div style="display:flex; justify-content:space-between; align-items:center;"><div style="font-family:'Space Mono',monospace; font-size:13px; color:#9A2A34; letter-spacing:0.1em;">05</div><div style="font-family:'Space Mono',monospace; font-size:16px; color:#c9b8a0;">&#8594;</div></div><h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(20px,1.9vw,26px); line-height:1.12; letter-spacing:-0.01em; margin:16px 0 12px;">Computational and Mathematical Neuroscience</h3><p style="font-size:14px; line-height:1.55; color:#4A443B; margin:0 0 auto;">Systems-level neuroscience: how large assemblies of interacting neurons give rise to animal and human behaviour.</p><div style="margin-top:20px; padding-top:16px; border-top:1px solid rgba(23,20,15,0.1); font-family:'Space Mono',monospace; font-size:11.5px; letter-spacing:0.08em; text-transform:uppercase; color:#8a5a5f;">8 researchers &middot; 11 publications</div></div>
+<div class="crm-gcard" data-group="5" role="button" tabindex="0" style="background:#FBFAF5; padding:clamp(24px,2.6vw,38px); border-top:3px solid transparent; cursor:pointer; display:flex; flex-direction:column; min-height:230px; transition:transform .4s cubic-bezier(.2,.7,.2,1), background .35s ease, border-color .35s ease;"><div style="display:flex; justify-content:space-between; align-items:center;"><div style="font-family:'Space Mono',monospace; font-size:13px; color:#9A2A34; letter-spacing:0.1em;">06</div><div style="font-family:'Space Mono',monospace; font-size:16px; color:#c9b8a0;">&#8594;</div></div><h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(20px,1.9vw,26px); line-height:1.12; letter-spacing:-0.01em; margin:16px 0 12px;">Mathematics for the Environment and Society</h3><p style="font-size:14px; line-height:1.55; color:#4A443B; margin:0 0 auto;">Mathematical and statistical techniques for natural hazards, climate and the capture of environmental contaminants.</p><div style="margin-top:20px; padding-top:16px; border-top:1px solid rgba(23,20,15,0.1); font-family:'Space Mono',monospace; font-size:11.5px; letter-spacing:0.08em; text-transform:uppercase; color:#8a5a5f;">5 researchers &middot; 9 publications</div></div>
+<div class="crm-gcard" data-group="6" role="button" tabindex="0" style="background:#FBFAF5; padding:clamp(24px,2.6vw,38px); border-top:3px solid transparent; cursor:pointer; display:flex; flex-direction:column; min-height:230px; transition:transform .4s cubic-bezier(.2,.7,.2,1), background .35s ease, border-color .35s ease;"><div style="display:flex; justify-content:space-between; align-items:center;"><div style="font-family:'Space Mono',monospace; font-size:13px; color:#9A2A34; letter-spacing:0.1em;">07</div><div style="font-family:'Space Mono',monospace; font-size:16px; color:#c9b8a0;">&#8594;</div></div><h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(20px,1.9vw,26px); line-height:1.12; letter-spacing:-0.01em; margin:16px 0 12px;">Analysis</h3><p style="font-size:14px; line-height:1.55; color:#4A443B; margin:0 0 auto;">Classical analysis at the interaction of complex and harmonic analysis with geometric measure theory, PDEs and probability.</p><div style="margin-top:20px; padding-top:16px; border-top:1px solid rgba(23,20,15,0.1); font-family:'Space Mono',monospace; font-size:11.5px; letter-spacing:0.08em; text-transform:uppercase; color:#8a5a5f;">12 researchers &middot; 22 publications</div></div>
+<div class="crm-gcard" data-group="7" role="button" tabindex="0" style="background:#FBFAF5; padding:clamp(24px,2.6vw,38px); border-top:3px solid transparent; cursor:pointer; display:flex; flex-direction:column; min-height:230px; transition:transform .4s cubic-bezier(.2,.7,.2,1), background .35s ease, border-color .35s ease;"><div style="display:flex; justify-content:space-between; align-items:center;"><div style="font-family:'Space Mono',monospace; font-size:13px; color:#9A2A34; letter-spacing:0.1em;">08</div><div style="font-family:'Space Mono',monospace; font-size:16px; color:#c9b8a0;">&#8594;</div></div><h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(20px,1.9vw,26px); line-height:1.12; letter-spacing:-0.01em; margin:16px 0 12px;">Partial Differential Equations</h3><p style="font-size:14px; line-height:1.55; color:#4A443B; margin:0 0 auto;">Regularity of nonlinear PDE, free boundary problems, minimal surfaces and nonlocal equations from probability and physics.</p><div style="margin-top:20px; padding-top:16px; border-top:1px solid rgba(23,20,15,0.1); font-family:'Space Mono',monospace; font-size:11.5px; letter-spacing:0.08em; text-transform:uppercase; color:#8a5a5f;">5 researchers &middot; 11 publications</div></div>
+<div class="crm-gcard" data-group="8" role="button" tabindex="0" style="background:#FBFAF5; padding:clamp(24px,2.6vw,38px); border-top:3px solid transparent; cursor:pointer; display:flex; flex-direction:column; min-height:230px; transition:transform .4s cubic-bezier(.2,.7,.2,1), background .35s ease, border-color .35s ease;"><div style="display:flex; justify-content:space-between; align-items:center;"><div style="font-family:'Space Mono',monospace; font-size:13px; color:#9A2A34; letter-spacing:0.1em;">09</div><div style="font-family:'Space Mono',monospace; font-size:16px; color:#c9b8a0;">&#8594;</div></div><h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(20px,1.9vw,26px); line-height:1.12; letter-spacing:-0.01em; margin:16px 0 12px;">Dynamical Systems</h3><p style="font-size:14px; line-height:1.55; color:#4A443B; margin:0 0 auto;">Invariant objects and their connections, with applications in celestial mechanics, astrodynamics, neuroscience and chemistry.</p><div style="margin-top:20px; padding-top:16px; border-top:1px solid rgba(23,20,15,0.1); font-family:'Space Mono',monospace; font-size:11.5px; letter-spacing:0.08em; text-transform:uppercase; color:#8a5a5f;">18 researchers &middot; 34 publications</div></div>
+<div class="crm-gcard" data-group="9" role="button" tabindex="0" style="background:#FBFAF5; padding:clamp(24px,2.6vw,38px); border-top:3px solid transparent; cursor:pointer; display:flex; flex-direction:column; min-height:230px; transition:transform .4s cubic-bezier(.2,.7,.2,1), background .35s ease, border-color .35s ease;"><div style="display:flex; justify-content:space-between; align-items:center;"><div style="font-family:'Space Mono',monospace; font-size:13px; color:#9A2A34; letter-spacing:0.1em;">10</div><div style="font-family:'Space Mono',monospace; font-size:16px; color:#c9b8a0;">&#8594;</div></div><h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(20px,1.9vw,26px); line-height:1.12; letter-spacing:-0.01em; margin:16px 0 12px;">Combinatorics and Mathematics of Computer Science</h3><p style="font-size:14px; line-height:1.55; color:#4A443B; margin:0 0 auto;">Discrete mathematics, theoretical computer science and mathematical logic — from graph theory to computational complexity.</p><div style="margin-top:20px; padding-top:16px; border-top:1px solid rgba(23,20,15,0.1); font-family:'Space Mono',monospace; font-size:11.5px; letter-spacing:0.08em; text-transform:uppercase; color:#8a5a5f;">11 researchers &middot; 16 publications</div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== GROUP MODAL ===================== -->
+  
+
+  <!-- ===================== HIGHLIGHTED PUBLICATIONS ===================== -->
+  <section style="padding:clamp(60px,9vw,130px) clamp(20px,6vw,96px); border-top:1px solid rgba(23,20,15,0.14);">
+    <div style="max-width:1400px; margin:0 auto;">
+      <div data-reveal style="max-width:820px; margin-bottom:clamp(40px,6vw,72px);">
+        <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:18px;">03 — Highlighted publications</div>
+        <h2 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(30px,5.4vw,64px); line-height:1.02; letter-spacing:-0.02em; margin:0 0 20px;">Thirteen from <span style="font-style:italic; color:#9A2A34;">140 papers</span>.</h2>
+        <p style="font-size:clamp(15px,1.7vw,19px); line-height:1.6; color:#4A443B; margin:0;">The results the centre highlighted from its 2025 output, spanning the research groups. Each links to the paper.</p>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(330px,1fr)); gap:14px;">
+        <a href="https://doi.org/10.1515/crelle-2025-0014" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; background:#FBFAF5; border:1px solid rgba(23,20,15,0.12); border-radius:5px; padding:clamp(24px,2.4vw,34px); display:flex; flex-direction:column; min-height:250px; transition:transform .4s cubic-bezier(.2,.7,.2,1), border-color .35s ease, background .35s ease;">
+          <div style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#9A2A34;">Number Theory</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(20px,1.8vw,25px); line-height:1.2; letter-spacing:-0.01em; margin:16px 0 14px;">On Darmon’s program for the generalized Fermat equation, I</h3>
+          <div style="font-size:14px; line-height:1.55; color:#4A443B; margin:0 0 auto;">Billerey, Chen, Dieulefait &amp; Freitas</div>
+          <div style="margin-top:22px; padding-top:14px; border-top:1px solid rgba(23,20,15,0.1); font-family:'Space Mono',monospace; font-size:11.5px; letter-spacing:0.04em; color:#8a5a5f;">Crelle’s Journal · 2025 · DOI ↗</div>
+        </a>
+        <a href="https://doi.org/10.1007/s00222-025-01337-w" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; background:#FBFAF5; border:1px solid rgba(23,20,15,0.12); border-radius:5px; padding:clamp(24px,2.4vw,34px); display:flex; flex-direction:column; min-height:250px; transition:transform .4s cubic-bezier(.2,.7,.2,1), border-color .35s ease, background .35s ease;">
+          <div style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#9A2A34;">Analysis</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(20px,1.8vw,25px); line-height:1.2; letter-spacing:-0.01em; margin:16px 0 14px;">Carleson’s ε²-conjecture in higher dimensions</h3>
+          <div style="font-size:14px; line-height:1.55; color:#4A443B; margin:0 0 auto;">Fleschler, Tolsa &amp; Villa</div>
+          <div style="margin-top:22px; padding-top:14px; border-top:1px solid rgba(23,20,15,0.1); font-family:'Space Mono',monospace; font-size:11.5px; letter-spacing:0.04em; color:#8a5a5f;">Inventiones Mathematicae · 2025 · DOI ↗</div>
+        </a>
+        <a href="https://doi.org/10.1038/s41598-025-11102-x" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; background:#FBFAF5; border:1px solid rgba(23,20,15,0.12); border-radius:5px; padding:clamp(24px,2.4vw,34px); display:flex; flex-direction:column; min-height:250px; transition:transform .4s cubic-bezier(.2,.7,.2,1), border-color .35s ease, background .35s ease;">
+          <div style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#9A2A34;">Computational and Mathematical Neuroscience</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(20px,1.8vw,25px); line-height:1.2; letter-spacing:-0.01em; margin:16px 0 14px;">Representational drift as the consequence of ongoing memory storage</h3>
+          <div style="font-size:14px; line-height:1.55; color:#4A443B; margin:0 0 auto;">Devalle, Zou, Cecchini &amp; Roxin</div>
+          <div style="margin-top:22px; padding-top:14px; border-top:1px solid rgba(23,20,15,0.1); font-family:'Space Mono',monospace; font-size:11.5px; letter-spacing:0.04em; color:#8a5a5f;">Scientific Reports · 2025 · DOI ↗</div>
+        </a>
+        <a href="https://doi.org/10.1007/s00205-024-02075-8" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; background:#FBFAF5; border:1px solid rgba(23,20,15,0.12); border-radius:5px; padding:clamp(24px,2.4vw,34px); display:flex; flex-direction:column; min-height:250px; transition:transform .4s cubic-bezier(.2,.7,.2,1), border-color .35s ease, background .35s ease;">
+          <div style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#9A2A34;">Geometry and Topology</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(20px,1.8vw,25px); line-height:1.2; letter-spacing:-0.01em; margin:16px 0 14px;">Asymmetry of MHD equilibria for generic adapted metrics</h3>
+          <div style="font-size:14px; line-height:1.55; color:#4A443B; margin:0 0 auto;">Cardona, Duignan &amp; Perrella</div>
+          <div style="margin-top:22px; padding-top:14px; border-top:1px solid rgba(23,20,15,0.1); font-family:'Space Mono',monospace; font-size:11.5px; letter-spacing:0.04em; color:#8a5a5f;">Arch. Rational Mech. Anal. · 2025 · DOI ↗</div>
+        </a>
+        <a href="https://doi.org/10.1353/ajm.2025.a966290" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; background:#FBFAF5; border:1px solid rgba(23,20,15,0.12); border-radius:5px; padding:clamp(24px,2.4vw,34px); display:flex; flex-direction:column; min-height:250px; transition:transform .4s cubic-bezier(.2,.7,.2,1), border-color .35s ease, background .35s ease;">
+          <div style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#9A2A34;">Partial Differential Equations</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(20px,1.8vw,25px); line-height:1.2; letter-spacing:-0.01em; margin:16px 0 14px;">Stable solutions to the fractional Allen–Cahn equation</h3>
+          <div style="font-size:14px; line-height:1.55; color:#4A443B; margin:0 0 auto;">Cabré, Cinti &amp; Serra</div>
+          <div style="margin-top:22px; padding-top:14px; border-top:1px solid rgba(23,20,15,0.1); font-family:'Space Mono',monospace; font-size:11.5px; letter-spacing:0.04em; color:#8a5a5f;">American J. of Mathematics · 2025 · DOI ↗</div>
+        </a>
+        <a href="https://doi.org/10.1089/cmb.2024.0843" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; background:#FBFAF5; border:1px solid rgba(23,20,15,0.12); border-radius:5px; padding:clamp(24px,2.4vw,34px); display:flex; flex-direction:column; min-height:250px; transition:transform .4s cubic-bezier(.2,.7,.2,1), border-color .35s ease, background .35s ease;">
+          <div style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#9A2A34;">Mathematical and Computational Biology</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(20px,1.8vw,25px); line-height:1.2; letter-spacing:-0.01em; margin:16px 0 14px;">Generating heterogeneous data on gene trees</h3>
+          <div style="font-size:14px; line-height:1.55; color:#4A443B; margin:0 0 auto;">García, Moscardó &amp; Casanellas</div>
+          <div style="margin-top:22px; padding-top:14px; border-top:1px solid rgba(23,20,15,0.1); font-family:'Space Mono',monospace; font-size:11.5px; letter-spacing:0.04em; color:#8a5a5f;">J. of Computational Biology · 2025 · DOI ↗</div>
+        </a>
+        <a href="https://doi.org/10.5802/jep.302" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; background:#FBFAF5; border:1px solid rgba(23,20,15,0.12); border-radius:5px; padding:clamp(24px,2.4vw,34px); display:flex; flex-direction:column; min-height:250px; transition:transform .4s cubic-bezier(.2,.7,.2,1), border-color .35s ease, background .35s ease;">
+          <div style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#9A2A34;">Dynamical Systems</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(20px,1.8vw,25px); line-height:1.2; letter-spacing:-0.01em; margin:16px 0 14px;">Ergodic properties of infinite extensions of interval exchange maps</h3>
+          <div style="font-size:14px; line-height:1.55; color:#4A443B; margin:0 0 auto;">Berk &amp; Trujillo</div>
+          <div style="margin-top:22px; padding-top:14px; border-top:1px solid rgba(23,20,15,0.1); font-family:'Space Mono',monospace; font-size:11.5px; letter-spacing:0.04em; color:#8a5a5f;">J. de l’École Polytechnique · 2025 · DOI ↗</div>
+        </a>
+        <a href="https://doi.org/10.4171/jems/1724" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; background:#FBFAF5; border:1px solid rgba(23,20,15,0.12); border-radius:5px; padding:clamp(24px,2.4vw,34px); display:flex; flex-direction:column; min-height:250px; transition:transform .4s cubic-bezier(.2,.7,.2,1), border-color .35s ease, background .35s ease;">
+          <div style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#9A2A34;">Partial Differential Equations</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(20px,1.8vw,25px); line-height:1.2; letter-spacing:-0.01em; margin:16px 0 14px;">Improvement of flatness for nonlocal free boundary problems</h3>
+          <div style="font-size:14px; line-height:1.55; color:#4A443B; margin:0 0 auto;">Ros-Oton &amp; Weidner</div>
+          <div style="margin-top:22px; padding-top:14px; border-top:1px solid rgba(23,20,15,0.1); font-family:'Space Mono',monospace; font-size:11.5px; letter-spacing:0.04em; color:#8a5a5f;">J. Eur. Math. Society · 2025 · DOI ↗</div>
+        </a>
+        <a href="https://doi.org/10.4171/jems/1660" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; background:#FBFAF5; border:1px solid rgba(23,20,15,0.12); border-radius:5px; padding:clamp(24px,2.4vw,34px); display:flex; flex-direction:column; min-height:250px; transition:transform .4s cubic-bezier(.2,.7,.2,1), border-color .35s ease, background .35s ease;">
+          <div style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#9A2A34;">Analysis</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(20px,1.8vw,25px); line-height:1.2; letter-spacing:-0.01em; margin:16px 0 14px;">Solvability of the Poisson–Dirichlet problem in Carleson spaces</h3>
+          <div style="font-size:14px; line-height:1.55; color:#4A443B; margin:0 0 auto;">Mourgoglou, Poggi &amp; Tolsa</div>
+          <div style="margin-top:22px; padding-top:14px; border-top:1px solid rgba(23,20,15,0.1); font-family:'Space Mono',monospace; font-size:11.5px; letter-spacing:0.04em; color:#8a5a5f;">J. Eur. Math. Society · 2025 · DOI ↗</div>
+        </a>
+        <a href="https://doi.org/10.1371/journal.pcbi.1012698" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; background:#FBFAF5; border:1px solid rgba(23,20,15,0.12); border-radius:5px; padding:clamp(24px,2.4vw,34px); display:flex; flex-direction:column; min-height:250px; transition:transform .4s cubic-bezier(.2,.7,.2,1), border-color .35s ease, background .35s ease;">
+          <div style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#9A2A34;">Mathematical and Computational Biology</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(20px,1.8vw,25px); line-height:1.2; letter-spacing:-0.01em; margin:16px 0 14px;">Multiscale modelling of cell–ECM interactions</h3>
+          <div style="font-size:14px; line-height:1.55; color:#4A443B; margin:0 0 auto;">Arellano-Tinto, Stepanova, Byrne, Maini &amp; Alarcón</div>
+          <div style="margin-top:22px; padding-top:14px; border-top:1px solid rgba(23,20,15,0.1); font-family:'Space Mono',monospace; font-size:11.5px; letter-spacing:0.04em; color:#8a5a5f;">PLOS Computational Biology · 2025 · DOI ↗</div>
+        </a>
+        <a href="https://doi.org/10.1007/s00208-025-03120-x" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; background:#FBFAF5; border:1px solid rgba(23,20,15,0.12); border-radius:5px; padding:clamp(24px,2.4vw,34px); display:flex; flex-direction:column; min-height:250px; transition:transform .4s cubic-bezier(.2,.7,.2,1), border-color .35s ease, background .35s ease;">
+          <div style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#9A2A34;">Combinatorics and Mathematics of Computer Science</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(20px,1.8vw,25px); line-height:1.2; letter-spacing:-0.01em; margin:16px 0 14px;">Hochschild polytopes</h3>
+          <div style="font-size:14px; line-height:1.55; color:#4A443B; margin:0 0 auto;">Pilaud &amp; Poliakova</div>
+          <div style="margin-top:22px; padding-top:14px; border-top:1px solid rgba(23,20,15,0.1); font-family:'Space Mono',monospace; font-size:11.5px; letter-spacing:0.04em; color:#8a5a5f;">Mathematische Annalen · 2025 · DOI ↗</div>
+        </a>
+        <a href="https://doi.org/10.1145/3721855" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; background:#FBFAF5; border:1px solid rgba(23,20,15,0.12); border-radius:5px; padding:clamp(24px,2.4vw,34px); display:flex; flex-direction:column; min-height:250px; transition:transform .4s cubic-bezier(.2,.7,.2,1), border-color .35s ease, background .35s ease;">
+          <div style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#9A2A34;">Combinatorics and Mathematics of Computer Science</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(20px,1.8vw,25px); line-height:1.2; letter-spacing:-0.01em; margin:16px 0 14px;">Consistency of Relations over Monoids</h3>
+          <div style="font-size:14px; line-height:1.55; color:#4A443B; margin:0 0 auto;">Atserias &amp; Kolaitis</div>
+          <div style="margin-top:22px; padding-top:14px; border-top:1px solid rgba(23,20,15,0.1); font-family:'Space Mono',monospace; font-size:11.5px; letter-spacing:0.04em; color:#8a5a5f;">Journal of the ACM · 2025 · DOI ↗</div>
+        </a>
+        <a href="https://doi.org/10.1137/24M1692393" target="_blank" rel="noopener" style="text-decoration:none; color:inherit; background:#FBFAF5; border:1px solid rgba(23,20,15,0.12); border-radius:5px; padding:clamp(24px,2.4vw,34px); display:flex; flex-direction:column; min-height:250px; transition:transform .4s cubic-bezier(.2,.7,.2,1), border-color .35s ease, background .35s ease;">
+          <div style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#9A2A34;">Mathematics for the Environment and Society</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(20px,1.8vw,25px); line-height:1.2; letter-spacing:-0.01em; margin:16px 0 14px;">A homogenized model for dispersive transport and sorption</h3>
+          <div style="font-size:14px; line-height:1.55; color:#4A443B; margin:0 0 auto;">Auton, Dalwadi &amp; Griffiths</div>
+          <div style="margin-top:22px; padding-top:14px; border-top:1px solid rgba(23,20,15,0.1); font-family:'Space Mono',monospace; font-size:11.5px; letter-spacing:0.04em; color:#8a5a5f;">SIAM J. Applied Math · 2025 · DOI ↗</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== KNOWLEDGE TRANSFER ===================== -->
+  <section style="background:#EBE5D8; padding:clamp(60px,9vw,130px) clamp(20px,6vw,96px); border-top:1px solid rgba(23,20,15,0.14);">
+    <div style="max-width:1400px; margin:0 auto;">
+      <div data-reveal style="max-width:820px; margin-bottom:clamp(40px,6vw,72px);">
+        <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:18px;">04 — Knowledge Transfer</div>
+        <h2 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(30px,5.4vw,64px); line-height:1.02; letter-spacing:-0.02em; margin:0 0 20px;">Turning theorems into <span style="font-style:italic; color:#9A2A34;">tools</span>.</h2>
+        <p style="font-size:clamp(15px,1.7vw,19px); line-height:1.6; color:#4A443B; margin:0;">The Knowledge Transfer Unit connects CRM research with companies, institutions and the public sector — building tailored solutions in modelling, simulation, optimisation and data science, and running two industrial study weeks each year.</p>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:14px;">
+        <div style="background:#FBFAF5; border:1px solid rgba(23,20,15,0.12); border-radius:6px; padding:clamp(24px,2.6vw,36px); display:flex; flex-direction:column; transition:transform .4s cubic-bezier(.2,.7,.2,1), border-color .35s ease;">
+          <div style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#9A2A34;">Food-tech</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(21px,2vw,27px); line-height:1.1; margin:14px 0 12px;">BISTECH</h3>
+          <p style="font-size:14.5px; line-height:1.58; color:#4A443B; margin:0;">A mathematical model — and a friendly interface — for cooking a wide range of foods with a new device.</p>
+        </div>
+        <div style="background:#FBFAF5; border:1px solid rgba(23,20,15,0.12); border-radius:6px; padding:clamp(24px,2.6vw,36px); display:flex; flex-direction:column; transition:transform .4s cubic-bezier(.2,.7,.2,1), border-color .35s ease;">
+          <div style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#9A2A34;">ALBA Synchrotron</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(21px,2vw,27px); line-height:1.1; margin:14px 0 12px;">DYSEDAS</h3>
+          <p style="font-size:14.5px; line-height:1.58; color:#4A443B; margin:0;">A lossless data-compression method powered by dynamical systems, with the ALBA Synchrotron as end user.</p>
+        </div>
+        <div style="background:#FBFAF5; border:1px solid rgba(23,20,15,0.12); border-radius:6px; padding:clamp(24px,2.6vw,36px); display:flex; flex-direction:column; transition:transform .4s cubic-bezier(.2,.7,.2,1), border-color .35s ease;">
+          <div style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#9A2A34;">Cybersecurity · i2CAT</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(21px,2vw,27px); line-height:1.1; margin:14px 0 12px;">LICSAI</h3>
+          <p style="font-size:14.5px; line-height:1.58; color:#4A443B; margin:0;">Quantifying the uncertainty of an AI algorithm that estimates the risk of a phishing attack.</p>
+        </div>
+        <div style="background:#FBFAF5; border:1px solid rgba(23,20,15,0.12); border-radius:6px; padding:clamp(24px,2.6vw,36px); display:flex; flex-direction:column; transition:transform .4s cubic-bezier(.2,.7,.2,1), border-color .35s ease;">
+          <div style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#9A2A34;">Health · Antivirals</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(21px,2vw,27px); line-height:1.1; margin:14px 0 12px;">TIPSAVIR</h3>
+          <p style="font-size:14.5px; line-height:1.58; color:#4A443B; margin:0;">Simulating viral infection at the RNA level to search for therapeutic interfering genomes as antivirals.</p>
+        </div>
+        <div style="background:#FBFAF5; border:1px solid rgba(23,20,15,0.12); border-radius:6px; padding:clamp(24px,2.6vw,36px); display:flex; flex-direction:column; transition:transform .4s cubic-bezier(.2,.7,.2,1), border-color .35s ease;">
+          <div style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#9A2A34;">Mobility · Horizon Europe</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(21px,2vw,27px); line-height:1.1; margin:14px 0 12px;">eBRT2030</h3>
+          <p style="font-size:14.5px; line-height:1.58; color:#4A443B; margin:0;">A Horizon Europe project with 49 partners developing a new generation of electric Bus Rapid Transit systems.</p>
+        </div>
+      </div>
+      <div data-reveal style="margin-top:clamp(28px,4vw,44px); display:flex; flex-wrap:wrap; gap:12px 40px; font-family:'Space Mono',monospace; font-size:12.5px; letter-spacing:0.04em; color:#4A443B;">
+        <div><span style="color:#9A2A34; text-transform:uppercase; letter-spacing:0.14em; font-size:11px;">Unit</span><br>David Romero (Head) · Lucía Escudero · Marc Homs-Dones · Manel Mas · Daniel Cuadrillero</div>
+        <div><span style="color:#9A2A34; text-transform:uppercase; letter-spacing:0.14em; font-size:11px;">Partners</span><br>ICFO · ICM · ALBA Synchrotron</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== OUTREACH ===================== -->
+  <section style="background:#17140F; color:#F2EEE4; padding:clamp(60px,9vw,130px) clamp(20px,6vw,96px); position:relative; overflow:hidden;">
+    <div style="position:absolute; inset:0; background-image:linear-gradient(rgba(242,238,228,0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(242,238,228,0.045) 1px, transparent 1px); background-size:44px 44px; pointer-events:none;"></div>
+    <div style="position:relative; max-width:1400px; margin:0 auto;">
+      <div data-reveal style="max-width:820px; margin-bottom:clamp(40px,6vw,72px);">
+        <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#F0B9BD; margin-bottom:18px;">05 — Outreach &amp; Communication</div>
+        <h2 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(30px,5.4vw,64px); line-height:1.02; letter-spacing:-0.02em; margin:0 0 20px;">Mathematics, <span style="font-style:italic; color:#F0B9BD;">out loud</span>.</h2>
+        <p style="font-size:clamp(15px,1.7vw,19px); line-height:1.6; color:#cfc6b8; margin:0;">Two platforms and a full calendar of science festivals carried the CRM’s public engagement in 2025 — from a storytelling blog and a podcast to hands-on demonstrations for thousands of visitors.</p>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1px; background:rgba(242,238,228,0.16); border:1px solid rgba(242,238,228,0.16); margin-bottom:clamp(40px,6vw,64px);">
+        <div style="background:#17140F; padding:clamp(24px,2.8vw,40px) clamp(18px,2.4vw,30px);">
+          <div style="font-family:'Space Mono',monospace; font-weight:700; font-size:clamp(38px,4.8vw,68px); line-height:1; letter-spacing:-0.03em; color:#F7F1EA;"><span data-count="28">28</span></div>
+          <div style="margin-top:14px; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(247,241,234,0.6);">Blog posts · El Gegant del π</div>
+        </div>
+        <div style="background:#17140F; padding:clamp(24px,2.8vw,40px) clamp(18px,2.4vw,30px);">
+          <div style="font-family:'Space Mono',monospace; font-weight:700; font-size:clamp(38px,4.8vw,68px); line-height:1; letter-spacing:-0.03em; color:#F7F1EA;"><span data-count="2049">2,049</span></div>
+          <div style="margin-top:14px; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(247,241,234,0.6);">Blog views</div>
+        </div>
+        <div style="background:#17140F; padding:clamp(24px,2.8vw,40px) clamp(18px,2.4vw,30px);">
+          <div style="font-family:'Space Mono',monospace; font-weight:700; font-size:clamp(38px,4.8vw,68px); line-height:1; letter-spacing:-0.03em; color:#F7F1EA;"><span data-count="2">2</span></div>
+          <div style="margin-top:14px; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(247,241,234,0.6);">Podcast episodes · Ments Meravelloses</div>
+        </div>
+        <div style="background:#17140F; padding:clamp(24px,2.8vw,40px) clamp(18px,2.4vw,30px);">
+          <div style="font-family:'Space Mono',monospace; font-weight:700; font-size:clamp(38px,4.8vw,68px); line-height:1; letter-spacing:-0.03em; color:#F7F1EA;"><span data-count="4846">4,846</span></div>
+          <div style="margin-top:14px; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(247,241,234,0.6);">Podcast views</div>
+        </div>
+        <div style="background:#17140F; padding:clamp(24px,2.8vw,40px) clamp(18px,2.4vw,30px);">
+          <div style="font-family:'Space Mono',monospace; font-weight:700; font-size:clamp(38px,4.8vw,68px); line-height:1; letter-spacing:-0.03em; color:#F7F1EA;"><span data-count="20" data-suffix="+">20+</span></div>
+          <div style="margin-top:14px; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(247,241,234,0.6);">Event chronicles</div>
+        </div>
+        <div style="background:#17140F; padding:clamp(24px,2.8vw,40px) clamp(18px,2.4vw,30px);">
+          <div style="font-family:'Space Mono',monospace; font-weight:700; font-size:clamp(38px,4.8vw,68px); line-height:1; letter-spacing:-0.03em; color:#F7F1EA;"><span data-count="13">13</span></div>
+          <div style="margin-top:14px; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(247,241,234,0.6);">Figures Visibles displays</div>
+        </div>
+        <div style="background:#17140F; padding:clamp(24px,2.8vw,40px) clamp(18px,2.4vw,30px);">
+          <div style="font-family:'Space Mono',monospace; font-weight:700; font-size:clamp(38px,4.8vw,68px); line-height:1; letter-spacing:-0.03em; color:#F7F1EA;"><span data-count="12">12</span></div>
+          <div style="margin-top:14px; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(247,241,234,0.6);">Videos produced</div>
+        </div>
+        <div style="background:#17140F; padding:clamp(24px,2.8vw,40px) clamp(18px,2.4vw,30px);">
+          <div style="font-family:'Space Mono',monospace; font-weight:700; font-size:clamp(38px,4.8vw,68px); line-height:1; letter-spacing:-0.03em; color:#F7F1EA;"><span data-count="20164">20,164</span></div>
+          <div style="margin-top:14px; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(247,241,234,0.6);">Video views</div>
+        </div>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:clamp(28px,5vw,56px); align-items:center;">
+        <div data-reveal>
+          <div style="font-family:'Space Mono',monospace; font-size:11.5px; letter-spacing:0.16em; text-transform:uppercase; color:#F0B9BD; margin-bottom:16px;">Programmes &amp; appearances</div>
+          <div style="display:flex; flex-wrap:wrap; gap:9px;">
+            <span style="border:1px solid rgba(242,238,228,0.28); border-radius:100px; padding:7px 15px; font-size:13.5px;">El Gegant del π blog</span>
+            <span style="border:1px solid rgba(242,238,228,0.28); border-radius:100px; padding:7px 15px; font-size:13.5px;">Ments Meravelloses podcast</span>
+            <span style="border:1px solid rgba(242,238,228,0.28); border-radius:100px; padding:7px 15px; font-size:13.5px;">Diari de doctorat</span>
+            <span style="border:1px solid rgba(242,238,228,0.28); border-radius:100px; padding:7px 15px; font-size:13.5px;">Mathematical Fiction Saga</span>
+            <span style="border:1px solid rgba(242,238,228,0.28); border-radius:100px; padding:7px 15px; font-size:13.5px;">Figures Visibles exhibition</span>
+            <span style="border:1px solid rgba(242,238,228,0.28); border-radius:100px; padding:7px 15px; font-size:13.5px;">Festa de la Ciència · Neural Code</span>
+            <span style="border:1px solid rgba(242,238,228,0.28); border-radius:100px; padding:7px 15px; font-size:13.5px;">Nit de la Recerca</span>
+            <span style="border:1px solid rgba(242,238,228,0.28); border-radius:100px; padding:7px 15px; font-size:13.5px;">Setmana de la Ciència</span>
+            <span style="border:1px solid rgba(242,238,228,0.28); border-radius:100px; padding:7px 15px; font-size:13.5px;">Women in Mathematics day</span>
+          </div>
+        </div>
+        <div data-reveal>
+          <img src="https://www.crm.cat/wp-content/uploads/2026/06/13-1.png" alt="Centre de Recerca Matemàtica mugs" style="width:100%; border-radius:6px; display:block;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TIMELINE ===================== -->
+  <section style="background:#EBE5D8; padding:clamp(60px,9vw,130px) clamp(20px,6vw,96px); border-top:1px solid rgba(23,20,15,0.14);">
+    <div style="max-width:1160px; margin:0 auto;">
+      <div data-reveal style="max-width:760px; margin-bottom:clamp(44px,6vw,80px);">
+        <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:18px;">06 — The year</div>
+        <h2 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(30px,5.4vw,64px); line-height:1.02; letter-spacing:-0.02em; margin:0;">A timeline of <span style="font-style:italic; color:#9A2A34;">2025</span>.</h2>
+      </div>
+
+      <div style="position:relative;">
+        <div style="position:absolute; left:0; top:6px; bottom:6px; width:1px; background:rgba(23,20,15,0.22);"></div>
+
+        <div data-reveal style="position:relative; padding-left:clamp(30px,5vw,68px); padding-bottom:clamp(40px,5vw,68px);">
+          <span style="position:absolute; left:-5px; top:6px; width:11px; height:11px; border-radius:50%; background:#9A2A34; box-shadow:0 0 0 5px #EBE5D8;"></span>
+          <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:12px;">January</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(24px,3.2vw,40px); line-height:1.05; letter-spacing:-0.02em; margin:0 0 12px;">4th Nonlinear Processes in Oceanic &amp; Atmospheric Flows</h3>
+          <p style="font-size:15.5px; line-height:1.62; color:#4A443B; margin:0; max-width:60ch;">An international forum bringing together mathematicians, physicists and oceanographers on the nonlinear dynamics of atmospheric and oceanic phenomena (22–25 January).</p>
+        </div>
+        <div data-reveal style="position:relative; padding-left:clamp(30px,5vw,68px); padding-bottom:clamp(40px,5vw,68px);">
+          <span style="position:absolute; left:-5px; top:6px; width:11px; height:11px; border-radius:50%; background:#9A2A34; box-shadow:0 0 0 5px #EBE5D8;"></span>
+          <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:12px;">January</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(24px,3.2vw,40px); line-height:1.05; letter-spacing:-0.02em; margin:0 0 12px;">BCN Face(t)s in Symplectic Geometry</h3>
+          <p style="font-size:15.5px; line-height:1.62; color:#4A443B; margin:0; max-width:60ch;">The year opens with a symplectic-geometry meeting in Barcelona (28–31 January), organised by Eva Miranda.</p>
+        </div>
+        <div data-reveal style="position:relative; padding-left:clamp(30px,5vw,68px); padding-bottom:clamp(40px,5vw,68px);">
+          <span style="position:absolute; left:-5px; top:6px; width:11px; height:11px; border-radius:50%; background:#9A2A34; box-shadow:0 0 0 5px #EBE5D8;"></span>
+          <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:12px;">January</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(24px,3.2vw,40px); line-height:1.05; letter-spacing:-0.02em; margin:0 0 12px;">Barcelona Discrete Mathematics Meeting</h3>
+          <p style="font-size:15.5px; line-height:1.62; color:#4A443B; margin:0; max-width:60ch;">Seven Barcelona discrete-maths groups meet for a day of talks (30 January) to spark new collaborations — the first BDMM.</p>
+        </div>
+        <div data-reveal style="position:relative; padding-left:clamp(30px,5vw,68px); padding-bottom:clamp(40px,5vw,68px);">
+          <span style="position:absolute; left:-5px; top:6px; width:11px; height:11px; border-radius:50%; background:#9A2A34; box-shadow:0 0 0 5px #EBE5D8;"></span>
+          <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:12px;">February</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(24px,3.2vw,40px); line-height:1.05; letter-spacing:-0.02em; margin:0 0 12px;">Workshop on Discrete Dynamical Systems</h3>
+          <p style="font-size:15.5px; line-height:1.62; color:#4A443B; margin:0; max-width:60ch;">A workshop revisiting difference equations, topological and combinatorial dynamics (3–6 February).</p>
+        </div>
+        <div data-reveal style="position:relative; padding-left:clamp(30px,5vw,68px); padding-bottom:clamp(40px,5vw,68px);">
+          <span style="position:absolute; left:-5px; top:6px; width:11px; height:11px; border-radius:50%; background:#9A2A34; box-shadow:0 0 0 5px #EBE5D8;"></span>
+          <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:12px;">March</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(24px,3.2vw,40px); line-height:1.05; letter-spacing:-0.02em; margin:0 0 12px;">New Frontiers in Homogenization &amp; Fractional Calculus</h3>
+          <p style="font-size:15.5px; line-height:1.62; color:#4A443B; margin:0; max-width:60ch;">A meeting on homogenization and fractional calculus (24–25 March), with Xavier Cabré on the programme committee.</p>
+        </div>
+        <div data-reveal style="position:relative; padding-left:clamp(30px,5vw,68px); padding-bottom:clamp(40px,5vw,68px);">
+          <span style="position:absolute; left:-5px; top:6px; width:11px; height:11px; border-radius:50%; background:#9A2A34; box-shadow:0 0 0 5px #EBE5D8;"></span>
+          <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:12px;">April</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(24px,3.2vw,40px); line-height:1.05; letter-spacing:-0.02em; margin:0 0 12px;">Chair of Excellence launches</h3>
+          <p style="font-size:15.5px; line-height:1.62; color:#4A443B; margin:0; max-width:60ch;">The CRM–María de Maeztu Chair of Excellence opens with an inaugural colloquium by Chenchang Zhu (Göttingen) on higher structures in symplectic geometry (9 April).</p>
+        </div>
+        <div data-reveal style="position:relative; padding-left:clamp(30px,5vw,68px); padding-bottom:clamp(40px,5vw,68px);">
+          <span style="position:absolute; left:-5px; top:6px; width:11px; height:11px; border-radius:50%; background:#9A2A34; box-shadow:0 0 0 5px #EBE5D8;"></span>
+          <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:12px;">May – Jun</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(24px,3.2vw,40px); line-height:1.05; letter-spacing:-0.02em; margin:0 0 12px;">Modern Trends in Fourier Analysis</h3>
+          <p style="font-size:15.5px; line-height:1.62; color:#4A443B; margin:0; max-width:60ch;">A seven-week Intensive Research Programme in harmonic analysis and geometric measure theory (5 May–25 June), with an advanced course and a conference.</p>
+        </div>
+        <div data-reveal style="position:relative; padding-left:clamp(30px,5vw,68px); padding-bottom:clamp(40px,5vw,68px);">
+          <span style="position:absolute; left:-5px; top:6px; width:11px; height:11px; border-radius:50%; background:#9A2A34; box-shadow:0 0 0 5px #EBE5D8;"></span>
+          <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:12px;">May</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(24px,3.2vw,40px); line-height:1.05; letter-spacing:-0.02em; margin:0 0 12px;">BARCCSYN 2025</h3>
+          <p style="font-size:15.5px; line-height:1.62; color:#4A443B; margin:0; max-width:60ch;">The 13th Barcelona Computational, Cognitive &amp; Systems Neuroscience meeting (22–23 May).</p>
+        </div>
+        <div data-reveal style="position:relative; padding-left:clamp(30px,5vw,68px); padding-bottom:clamp(40px,5vw,68px);">
+          <span style="position:absolute; left:-5px; top:6px; width:11px; height:11px; border-radius:50%; background:#9A2A34; box-shadow:0 0 0 5px #EBE5D8;"></span>
+          <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:12px;">May</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(24px,3.2vw,40px); line-height:1.05; letter-spacing:-0.02em; margin:0 0 12px;">PDE in Barcelona</h3>
+          <p style="font-size:15.5px; line-height:1.62; color:#4A443B; margin:0; max-width:60ch;">The analysis and PDE community gathers at the Universitat de Barcelona, organised by Xavier Ros-Oton and Tomás Sanz-Perela.</p>
+        </div>
+        <div data-reveal style="position:relative; padding-left:clamp(30px,5vw,68px); padding-bottom:clamp(40px,5vw,68px);">
+          <span style="position:absolute; left:-5px; top:6px; width:11px; height:11px; border-radius:50%; background:#9A2A34; box-shadow:0 0 0 5px #EBE5D8;"></span>
+          <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:12px;">June</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(24px,3.2vw,40px); line-height:1.05; letter-spacing:-0.02em; margin:0 0 12px;">Topics in Complex Dynamics 2025</h3>
+          <p style="font-size:15.5px; line-height:1.62; color:#4A443B; margin:0; max-width:60ch;">A week connecting complex dynamics to geometry and analysis at the Universitat de Barcelona (2–6 June).</p>
+        </div>
+        <div data-reveal style="position:relative; padding-left:clamp(30px,5vw,68px); padding-bottom:clamp(40px,5vw,68px);">
+          <span style="position:absolute; left:-5px; top:6px; width:11px; height:11px; border-radius:50%; background:#9A2A34; box-shadow:0 0 0 5px #EBE5D8;"></span>
+          <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:12px;">June</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(24px,3.2vw,40px); line-height:1.05; letter-spacing:-0.02em; margin:0 0 12px;">Jornada de Ciència Oberta</h3>
+          <p style="font-size:15.5px; line-height:1.62; color:#4A443B; margin:0; max-width:60ch;">An open-science day on transparency and accessibility across the whole research process (11 June).</p>
+        </div>
+        <div data-reveal style="position:relative; padding-left:clamp(30px,5vw,68px); padding-bottom:clamp(40px,5vw,68px);">
+          <span style="position:absolute; left:-5px; top:6px; width:11px; height:11px; border-radius:50%; background:#9A2A34; box-shadow:0 0 0 5px #EBE5D8;"></span>
+          <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:12px;">June</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(24px,3.2vw,40px); line-height:1.05; letter-spacing:-0.02em; margin:0 0 12px;">Hypatia 2025 Summer School</h3>
+          <p style="font-size:15.5px; line-height:1.62; color:#4A443B; margin:0; max-width:60ch;">A graduate summer school in number theory with a gender perspective highlighting women in mathematics (16–19 June).</p>
+        </div>
+        <div data-reveal style="position:relative; width:100vw; margin-left:calc(50% - 50vw); overflow:hidden; min-height:clamp(300px,42vw,500px); display:flex; align-items:center; margin-bottom:clamp(40px,5vw,68px);">
+          <img data-parallax="0.14" src="https://www.crm.cat/wp-content/uploads/2026/06/8-1.png" alt="A mathematician working at a blackboard at the CRM" style="position:absolute; left:0; top:-16%; width:100%; height:132%; object-fit:cover; will-change:transform;">
+          <div style="position:absolute; inset:0; background:linear-gradient(90deg, rgba(15,13,10,0.92) 0%, rgba(15,13,10,0.62) 46%, rgba(15,13,10,0.25) 100%);"></div>
+          <div style="position:relative; width:100%; padding:0 clamp(20px,6vw,96px);">
+            <div style="max-width:1160px; margin:0 auto;">
+              <div style="position:relative; padding-left:clamp(30px,5vw,68px);">
+                <div style="position:absolute; left:0; top:0; bottom:0; width:1px; background:rgba(242,238,228,0.3);"></div>
+                <span style="position:absolute; left:-5px; top:9px; width:12px; height:12px; border-radius:50%; background:#F0B9BD; box-shadow:0 0 0 5px rgba(15,13,10,0.45);"></span>
+                <div style="color:#F2EEE4; max-width:56ch;">
+                  <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#F0B9BD; margin-bottom:12px;">June</div>
+                  <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(28px,3.6vw,50px); line-height:1.03; letter-spacing:-0.02em; margin:0 0 14px;">ICMNS 2025</h3>
+                  <p style="font-size:16px; line-height:1.6; color:#e6ddce; margin:0; max-width:52ch;">The tenth International Conference on Mathematical Neuroscience brings the field to Barcelona (17–20 June).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-reveal style="position:relative; padding-left:clamp(30px,5vw,68px); padding-bottom:clamp(40px,5vw,68px);">
+          <span style="position:absolute; left:-5px; top:6px; width:11px; height:11px; border-radius:50%; background:#9A2A34; box-shadow:0 0 0 5px #EBE5D8;"></span>
+          <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:12px;">June</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(24px,3.2vw,40px); line-height:1.05; letter-spacing:-0.02em; margin:0 0 12px;">Harmonic Analysis &amp; PDEs Summer School</h3>
+          <p style="font-size:15.5px; line-height:1.62; color:#4A443B; margin:0; max-width:60ch;">A summer school on singular integrals, fluid mechanics and interaction-energy minimisers (25–27 June).</p>
+        </div>
+
+        <div data-reveal style="position:relative; width:100vw; margin-left:calc(50% - 50vw); overflow:hidden; min-height:clamp(300px,42vw,500px); display:flex; align-items:center; margin-bottom:clamp(40px,5vw,68px);">
+          <img data-parallax="0.14" src="https://www.crm.cat/wp-content/uploads/2026/06/3-3.png" alt="A researcher drawing a polytope on a chalkboard at the CRM" style="position:absolute; left:0; top:-16%; width:100%; height:132%; object-fit:cover; will-change:transform;">
+          <div style="position:absolute; inset:0; background:linear-gradient(90deg, rgba(15,13,10,0.92) 0%, rgba(15,13,10,0.62) 46%, rgba(15,13,10,0.25) 100%);"></div>
+          <div style="position:relative; width:100%; padding:0 clamp(20px,6vw,96px);">
+            <div style="max-width:1160px; margin:0 auto;">
+              <div style="position:relative; padding-left:clamp(30px,5vw,68px);">
+                <div style="position:absolute; left:0; top:0; bottom:0; width:1px; background:rgba(242,238,228,0.3);"></div>
+                <span style="position:absolute; left:-5px; top:9px; width:12px; height:12px; border-radius:50%; background:#F0B9BD; box-shadow:0 0 0 5px rgba(15,13,10,0.45);"></span>
+                <div style="color:#F2EEE4; max-width:56ch;">
+                  <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#F0B9BD; margin-bottom:12px;">Jun – Jul</div>
+                  <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(28px,3.6vw,50px); line-height:1.03; letter-spacing:-0.02em; margin:0 0 14px;">JISD 2025</h3>
+                  <p style="font-size:16px; line-height:1.6; color:#e6ddce; margin:0; max-width:52ch;">The 21st School on Interactions between Dynamical Systems and Partial Differential Equations gathers young researchers at Bellaterra (30 June–4 July).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-reveal style="position:relative; padding-left:clamp(30px,5vw,68px); padding-bottom:clamp(40px,5vw,68px);">
+          <span style="position:absolute; left:-5px; top:6px; width:11px; height:11px; border-radius:50%; background:#9A2A34; box-shadow:0 0 0 5px #EBE5D8;"></span>
+          <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:12px;">Jun – Jul</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(24px,3.2vw,40px); line-height:1.05; letter-spacing:-0.02em; margin:0 0 12px;">BIMR 2025</h3>
+          <p style="font-size:15.5px; line-height:1.62; color:#4A443B; margin:0; max-width:60ch;">The Barcelona Introduction to Mathematical Research summer school gives undergraduates a first taste of research (30 June–25 July).</p>
+        </div>
+        <div data-reveal style="position:relative; width:100vw; margin-left:calc(50% - 50vw); overflow:hidden; min-height:clamp(300px,42vw,500px); display:flex; align-items:center; margin-bottom:clamp(40px,5vw,68px);">
+          <img data-parallax="0.14" src="https://www.crm.cat/wp-content/uploads/2026/06/12-1.png" alt="A student walking towards the CRM auditorium beneath mathematical equations" style="position:absolute; left:0; top:-16%; width:100%; height:132%; object-fit:cover; will-change:transform;">
+          <div style="position:absolute; inset:0; background:linear-gradient(90deg, rgba(15,13,10,0.92) 0%, rgba(15,13,10,0.62) 46%, rgba(15,13,10,0.25) 100%);"></div>
+          <div style="position:relative; width:100%; padding:0 clamp(20px,6vw,96px);">
+            <div style="max-width:1160px; margin:0 auto;">
+              <div style="position:relative; padding-left:clamp(30px,5vw,68px);">
+                <div style="position:absolute; left:0; top:0; bottom:0; width:1px; background:rgba(242,238,228,0.3);"></div>
+                <span style="position:absolute; left:-5px; top:9px; width:12px; height:12px; border-radius:50%; background:#F0B9BD; box-shadow:0 0 0 5px rgba(15,13,10,0.45);"></span>
+                <div style="color:#F2EEE4; max-width:56ch;">
+                  <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#F0B9BD; margin-bottom:12px;">July</div>
+                  <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(28px,3.6vw,50px); line-height:1.03; letter-spacing:-0.02em; margin:0 0 14px;">XI Iberian Modeling Week</h3>
+                  <p style="font-size:16px; line-height:1.6; color:#e6ddce; margin:0; max-width:52ch;">The CRM hosts the eleventh Iberian Modeling Week (7–11 July) with math-in and Pt-maths-in — nearly 30 students tackle real-world industrial problems.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-reveal style="position:relative; padding-left:clamp(30px,5vw,68px); padding-bottom:clamp(40px,5vw,68px);">
+          <span style="position:absolute; left:-5px; top:6px; width:11px; height:11px; border-radius:50%; background:#9A2A34; box-shadow:0 0 0 5px #EBE5D8;"></span>
+          <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:12px;">July</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(24px,3.2vw,40px); line-height:1.05; letter-spacing:-0.02em; margin:0 0 12px;">European Study Group with Industry</h3>
+          <p style="font-size:15.5px; line-height:1.62; color:#4A443B; margin:0; max-width:60ch;">ESGI 2025 (14–18 July) pairs mathematicians with companies to solve real industrial problems, back-to-back with the Modeling Week.</p>
+        </div>
+        <div data-reveal style="position:relative; padding-left:clamp(30px,5vw,68px); padding-bottom:clamp(40px,5vw,68px);">
+          <span style="position:absolute; left:-5px; top:6px; width:11px; height:11px; border-radius:50%; background:#9A2A34; box-shadow:0 0 0 5px #EBE5D8;"></span>
+          <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:12px;">July</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(24px,3.2vw,40px); line-height:1.05; letter-spacing:-0.02em; margin:0 0 12px;">5th BCN Summer School of Stochastic Analysis &amp; Mathematical Finance</h3>
+          <p style="font-size:15.5px; line-height:1.62; color:#4A443B; margin:0; max-width:60ch;">Advanced courses reviving the CRM’s stochastic-analysis summer-school series (21–25 July).</p>
+        </div>
+        <div data-reveal style="position:relative; padding-left:clamp(30px,5vw,68px); padding-bottom:clamp(40px,5vw,68px);">
+          <span style="position:absolute; left:-5px; top:6px; width:11px; height:11px; border-radius:50%; background:#9A2A34; box-shadow:0 0 0 5px #EBE5D8;"></span>
+          <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:12px;">July</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(24px,3.2vw,40px); line-height:1.05; letter-spacing:-0.02em; margin:0 0 12px;">Strategic Plan 2026–2030</h3>
+          <p style="font-size:15.5px; line-height:1.62; color:#4A443B; margin:0; max-width:60ch;">The Scientific Advisory Board approves the new strategic plan, setting the centre’s direction across research, training and community.</p>
+        </div>
+        <div data-reveal style="position:relative; padding-left:clamp(30px,5vw,68px); padding-bottom:clamp(40px,5vw,68px);">
+          <span style="position:absolute; left:-5px; top:6px; width:11px; height:11px; border-radius:50%; background:#9A2A34; box-shadow:0 0 0 5px #EBE5D8;"></span>
+          <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:12px;">Summer</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(24px,3.2vw,40px); line-height:1.05; letter-spacing:-0.02em; margin:0 0 12px;">BAMB! 2025</h3>
+          <p style="font-size:15.5px; line-height:1.62; color:#4A443B; margin:0; max-width:60ch;">The Barcelona Advanced Modeling of Behaviour summer school trains the next generation in computational models of behaviour.</p>
+        </div>
+        <div data-reveal style="position:relative; padding-left:clamp(30px,5vw,68px); padding-bottom:clamp(40px,5vw,68px);">
+          <span style="position:absolute; left:-5px; top:6px; width:11px; height:11px; border-radius:50%; background:#9A2A34; box-shadow:0 0 0 5px #EBE5D8;"></span>
+          <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:12px;">September</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(24px,3.2vw,40px); line-height:1.05; letter-spacing:-0.02em; margin:0 0 12px;">Bilbao–Barcelona Analysis &amp; PDEs</h3>
+          <p style="font-size:15.5px; line-height:1.62; color:#4A443B; margin:0; max-width:60ch;">A joint analysis and PDEs meeting co-organised with BCAM in Bilbao (3–5 September).</p>
+        </div>
+        <div data-reveal style="position:relative; padding-left:clamp(30px,5vw,68px); padding-bottom:clamp(40px,5vw,68px);">
+          <span style="position:absolute; left:-5px; top:6px; width:11px; height:11px; border-radius:50%; background:#9A2A34; box-shadow:0 0 0 5px #EBE5D8;"></span>
+          <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:12px;">September</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(24px,3.2vw,40px); line-height:1.05; letter-spacing:-0.02em; margin:0 0 12px;">New ATRAE researcher</h3>
+          <p style="font-size:15.5px; line-height:1.62; color:#4A443B; margin:0; max-width:60ch;">A new ATRAE researcher joins the centre in September as part of ongoing talent attraction and diversity efforts.</p>
+        </div>
+        <div data-reveal style="position:relative; padding-left:clamp(30px,5vw,68px); padding-bottom:clamp(40px,5vw,68px);">
+          <span style="position:absolute; left:-5px; top:6px; width:11px; height:11px; border-radius:50%; background:#9A2A34; box-shadow:0 0 0 5px #EBE5D8;"></span>
+          <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:12px;">Sep – Oct</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(24px,3.2vw,40px); line-height:1.05; letter-spacing:-0.02em; margin:0 0 12px;">Complex Systems Society School</h3>
+          <p style="font-size:15.5px; line-height:1.62; color:#4A443B; margin:0; max-width:60ch;">The first school of the Complex Systems Society Spain (CS3), on the science of complex systems (29 September–3 October).</p>
+        </div>
+        <div data-reveal style="position:relative; padding-left:clamp(30px,5vw,68px); padding-bottom:clamp(40px,5vw,68px);">
+          <span style="position:absolute; left:-5px; top:6px; width:11px; height:11px; border-radius:50%; background:#9A2A34; box-shadow:0 0 0 5px #EBE5D8;"></span>
+          <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:12px;">Oct – Nov</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(24px,3.2vw,40px); line-height:1.05; letter-spacing:-0.02em; margin:0 0 12px;">Combinatorial Geometries</h3>
+          <p style="font-size:15.5px; line-height:1.62; color:#4A443B; margin:0; max-width:60ch;">The MdM Focused Research Programme opens with advanced courses on polytopes and matroids, closing with a week-long conference.</p>
+        </div>
+        <div data-reveal style="position:relative; padding-left:clamp(30px,5vw,68px); padding-bottom:clamp(40px,5vw,68px);">
+          <span style="position:absolute; left:-5px; top:6px; width:11px; height:11px; border-radius:50%; background:#9A2A34; box-shadow:0 0 0 5px #EBE5D8;"></span>
+          <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:12px;">October</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(24px,3.2vw,40px); line-height:1.05; letter-spacing:-0.02em; margin:0 0 12px;">XIII GEFENOL–DIFENSC Summer School</h3>
+          <p style="font-size:15.5px; line-height:1.62; color:#4A443B; margin:0; max-width:60ch;">A summer school on the statistical physics of complex systems (6–10 October).</p>
+        </div>
+        <div data-reveal style="position:relative; padding-left:clamp(30px,5vw,68px); padding-bottom:clamp(40px,5vw,68px);">
+          <span style="position:absolute; left:-5px; top:6px; width:11px; height:11px; border-radius:50%; background:#9A2A34; box-shadow:0 0 0 5px #EBE5D8;"></span>
+          <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:12px;">Oct – Nov</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(24px,3.2vw,40px); line-height:1.05; letter-spacing:-0.02em; margin:0 0 12px;">Advanced graduate courses</h3>
+          <p style="font-size:15.5px; line-height:1.62; color:#4A443B; margin:0; max-width:60ch;">BGSMath graduate courses run on Concentration Inequalities for Holomorphic Functions (27 Oct–5 Nov) and on the P vs NP problem (3–14 Nov).</p>
+        </div>
+        <div data-reveal style="position:relative; padding-left:clamp(30px,5vw,68px); padding-bottom:clamp(40px,5vw,68px);">
+          <span style="position:absolute; left:-5px; top:6px; width:11px; height:11px; border-radius:50%; background:#9A2A34; box-shadow:0 0 0 5px #EBE5D8;"></span>
+          <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:12px;">November</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(24px,3.2vw,40px); line-height:1.05; letter-spacing:-0.02em; margin:0 0 12px;">100xCiencia · Knowledge transfer</h3>
+          <p style="font-size:15.5px; line-height:1.62; color:#4A443B; margin:0; max-width:60ch;">CRM Director Carme Cascante and KTU head David Romero join the SOMMa 100xCiencia meeting in Valencia (13–14 November), on science communication and knowledge transfer.</p>
+        </div>
+        <div data-reveal style="position:relative; padding-left:clamp(30px,5vw,68px); padding-bottom:clamp(40px,5vw,68px);">
+          <span style="position:absolute; left:-5px; top:6px; width:11px; height:11px; border-radius:50%; background:#9A2A34; box-shadow:0 0 0 5px #EBE5D8;"></span>
+          <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#9A2A34; margin-bottom:12px;">December</div>
+          <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(24px,3.2vw,40px); line-height:1.05; letter-spacing:-0.02em; margin:0 0 12px;">CERCA evaluation passed</h3>
+          <p style="font-size:15.5px; line-height:1.62; color:#4A443B; margin:0; max-width:60ch;">The centre successfully completes its four-year CERCA evaluation, conducted by an international committee.</p>
+        </div>
+        <div data-reveal style="position:relative; padding-left:clamp(30px,5vw,68px);">
+          <span style="position:absolute; left:-7px; top:4px; width:15px; height:15px; border-radius:50%; background:#9A2A34; box-shadow:0 0 0 5px #EBE5D8, 0 0 0 10px rgba(154,42,52,0.18);"></span>
+          <div style="background:#17140F; color:#F2EEE4; padding:clamp(28px,4vw,48px); border-radius:6px;">
+            <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#F0B9BD; margin-bottom:14px;">2025 – 26 · Recognition</div>
+            <h3 style="font-family:'Newsreader',serif; font-weight:400; font-size:clamp(26px,3.6vw,46px); line-height:1.05; letter-spacing:-0.02em; margin:0 0 16px;">Recognition on the world stage</h3>
+            <p style="font-size:16px; line-height:1.62; color:#cfc6b8; margin:0; max-width:62ch;">Jezabel Curbelo receives the National Research Award for Young Researchers; Xavier Tolsa, Joaquim Ortega-Cerdà and Xavier Cabré are invited to <strong style="color:#F2EEE4; font-weight:600;">ICM 2026</strong> — Tolsa as a plenary speaker.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CREDITS ===================== -->
+  <section style="background:#0F0D0A; color:#EDE7DA; padding:clamp(72px,11vw,150px) clamp(20px,6vw,96px) clamp(48px,7vw,80px); position:relative; overflow:hidden; text-align:center;">
+    <img src="https://www.crm.cat/wp-content/uploads/2026/07/20251021_CRM076_ANDREUPUIG.jpg" alt="" aria-hidden="true" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0.32; pointer-events:none;">
+    <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(15,13,10,0.78) 0%, rgba(15,13,10,0.88) 50%, #0F0D0A 100%); pointer-events:none;"></div>
+    <div style="position:absolute; inset:0; background-image:radial-gradient(ellipse at 50% 0%, rgba(154,42,52,0.28), transparent 62%), linear-gradient(rgba(242,238,228,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(242,238,228,0.04) 1px, transparent 1px); background-size:auto, 46px 46px, 46px 46px; pointer-events:none;"></div>
+    <div style="position:relative; max-width:900px; margin:0 auto;">
+      <div data-reveal style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.34em; text-transform:uppercase; color:#E8A0A6; margin-bottom:26px;">Centre de Recerca Matemàtica presents</div>
+      <h2 data-reveal style="font-family:'Newsreader',serif; font-weight:300; font-style:italic; font-size:clamp(38px,7vw,84px); line-height:1; letter-spacing:-0.02em; margin:0 0 20px;">A Year in Mathematics</h2>
+      <div data-reveal style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:0.28em; text-transform:uppercase; color:rgba(237,231,218,0.5); margin-bottom:clamp(48px,7vw,80px);">Annual Report · MMXXV</div>
+
+      <div style="display:flex; flex-direction:column; gap:clamp(22px,2.8vw,34px); max-width:640px; margin:0 auto;">
+        <div data-reveal>
+          <div style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.3em; text-transform:uppercase; color:#C56;">Directed by</div>
+          <div style="font-family:'Newsreader',serif; font-size:clamp(20px,2.4vw,28px); margin-top:8px;">Carme Cascante</div>
+        </div>
+        <div data-reveal>
+          <div style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.3em; text-transform:uppercase; color:#C56;">Executive Board</div>
+          <div style="font-family:'Newsreader',serif; font-size:clamp(16px,1.8vw,22px); line-height:1.6; margin-top:8px;">Marcel Guàrdia · Josep Alvarez · Joaquim Ortega · Joan Porti · Klaus Wimmer</div>
+        </div>
+        <div data-reveal>
+          <div style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.3em; text-transform:uppercase; color:#C56;">Scientific Advisory Board</div>
+          <div style="font-family:'Newsreader',serif; font-size:clamp(15px,1.6vw,20px); line-height:1.6; margin-top:8px; color:#d8d0c1;">Ari Laptev <span style="color:#8a7f70;">(Chair)</span> · Afonso Bandeira · Kathryn Hess · Victoria Gould · Boris Gutkin · Philippe Michel · Alessandra Micheletti · Mikhail Sodin · Juan Soler · Susanna Terracini · Katrin Wendland</div>
+        </div>
+      </div>
+
+      <div data-reveal style="margin:clamp(48px,7vw,80px) 0 clamp(30px,4vw,44px); font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.3em; text-transform:uppercase; color:#C56;">Featuring the people</div>
+      <div style="max-width:900px; margin:0 auto; display:flex; flex-direction:column; gap:clamp(28px,3.4vw,44px);">
+        <div data-reveal>
+          <div style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.3em; text-transform:uppercase; color:#C56; margin-bottom:13px;">Senior Researchers</div>
+          <div style="font-family:'Newsreader',serif; font-size:clamp(15px,1.7vw,20px); line-height:1.75; color:#cfc7b8;">Josep Alvarez · Jaume Amorós · Ramon Antoine · Florent Balacheff · Guillem Blanco · Carlos d’Andrea · Javier J. Gutiérrez · Dolors Herbera · Joachim Kock · Martí Lahoz · Simone Marchesi · Rosa Maria Miró · Joan Carles Naranjo · Francesc Perera · Martín Sombra · Miguel Ángel Barja · Carles Broto · Robert Cardona · Natàlia Castellana · Joana Cirici · Immaculada Gálvez · Marta Mazzocco · Eva Miranda · Ignasi Mundet · Wolfgang Pitsch · Joan Porti · Gil Solanes · Francesc Bars · Paloma Bengoechea · Luis Dieulefait · Francesc Fité · Xavier Guitart · Marc Masdeu · Víctor Rotger · Tomás Alarcón · Marta Casanellas · Sílvia Cuadrado · Gissell Estrada-Rodríguez · Jesús Fernández · Eric Latorre · Josep Sardanyés · Toni Guillamón · Gemma Huguet · Alexandre Hyafil · Manuel Molano · Adrián Ponce · Àlex Roxin · Diego Vidaurre · Klaus Wimmer · Álvaro Corral · Marc Calvo · David Moriña · Timothy G. Myers · Pere Puig · Jorge Antezana · Carme Cascante · Albert Clop · Egor Kosov · Jordi Marzo · Joan Mateu · Artur Nicolau · Joaquim Ortega · Jordi Pau · Olli Saari · Sergey Tikhonov · Xavier Tolsa · Xavier Cabré · Gyula Csató · Albert Mas · Xavier Ros-Oton · Tomás Sanz · Inmaculada Baldomá · Andrew Clarke · Jezabel Curbelo · Amadeu Delshams · Kostiantyn Drach · Núria Fagella · Ernest Fontich · Marcel Guàrdia · Alejandro Haro · Xavier Jarque · Àngel Jorba · José Tomás Lázaro · Pau Martín · M. Teresa Martínez-Seara · Josep Masdemont · Mercè Ollé · Joan Torregrosa · Arturo Vieiro · Albert Atserias · Simeon Ball · Kolja Knauer · Richard Lang · Marc Noy · Arnau Padrol · Guillem Perarnau · Vincent Pilaud · Juan José Rué · Oriol Serra · Lluís Vena</div>
+        </div>
+        <div data-reveal>
+          <div style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.3em; text-transform:uppercase; color:#C56; margin-bottom:13px;">Postdoctoral Researchers</div>
+          <div style="font-family:'Newsreader',serif; font-size:clamp(15px,1.7vw,20px); line-height:1.75; color:#cfc7b8;">Michele Fornea · Ielyaas Cloete · Roser Homs · Daria Stepanova · Gloria Cecchini · Maria Da Fonseca · Jens-Bastian Eppler · Demetrio Ferro · Lluís Hernández · Aikaterini Kalou · Gabriel Mel · Martijn Wokke · Lucy Charlotte Auton · Álvaro González · Udayraj Thorat · Batyrbek Allamzharov · Cristian González-Riquelme · Niyaz Tokmagambetov · Alberto Maione · Gustavo Rodrigues-Ferreira · Frank Trujillo · Tassio Naia</div>
+        </div>
+        <div data-reveal>
+          <div style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.3em; text-transform:uppercase; color:#C56; margin-bottom:13px;">PhD Students</div>
+          <div style="font-family:'Newsreader',serif; font-size:clamp(15px,1.7vw,20px); line-height:1.75; color:#cfc7b8;">Lluís Llacer · Søren Dyhr · Pablo Nicolás · Javier Guillán · Oriol Llopis · Juan Arellano · Kevin Martínez · Amaia Vielba · Alexandra Antoniadou · Lucia de Arancibia · Pablo Crespo · Tomás D’Amelio · Alexandre García-Duran Castilla · Federico Poncio · Haowen Tang · Rachael Olwande · Miquel Saucedo · Joaquim Duran · Dídac Gil · Jordi Castellví</div>
+        </div>
+        <div data-reveal>
+          <div style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.3em; text-transform:uppercase; color:#C56; margin-bottom:13px;">Internship Students</div>
+          <div style="font-family:'Newsreader',serif; font-size:clamp(15px,1.7vw,20px); line-height:1.75; color:#cfc7b8;">Iolanda Alonso · Jannis Bressgott · Francesca Cangialosi · Joan Casamitjana · Mariona Fucho · Tatiana González · Oskar James Martin · Guerau Orus · Lucía Torrescusa · Núria Velasco</div>
+        </div>
+        <div data-reveal>
+          <div style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.3em; text-transform:uppercase; color:#C56; margin-bottom:13px;">Knowledge Transfer Unit</div>
+          <div style="font-family:'Newsreader',serif; font-size:clamp(15px,1.7vw,20px); line-height:1.75; color:#cfc7b8;">David Romero <span style="color:#8a7f70;">(Head of KTU)</span> · Lucía Escudero · Marc Homs-Dones · Manel Mas · Daniel Cuadrillero</div>
+        </div>
+        <div data-reveal>
+          <div style="font-family:'Space Mono',monospace; font-size:11px; letter-spacing:0.3em; text-transform:uppercase; color:#C56; margin-bottom:13px;">Research Support Staff</div>
+          <div style="font-family:'Newsreader',serif; font-size:clamp(15px,1.7vw,20px); line-height:1.75; color:#cfc7b8;">Patricia Alves · Ivan Cañamero · Jordi Cuni Dols · Sara Dos Santos · Jose Manuel Garcia de la Fuente · Ariadna Gutiérrez · Núria Hernández Martín · Gemma Martinez Barrera · Sara Martinez Redecillas · Jordi Mullor Tenas · Vanessa Ramirez Garcia · Anna Renter · Consol Roca Guillen · Claudia Ros · Vanessa Sánchez · Mari Paz Valero Navazo · Natalia Vallina · Pau Varela Rodriguez</div>
+        </div>
+      </div>
+
+      <div data-reveal style="margin-top:clamp(48px,7vw,80px); font-family:'Newsreader',serif; font-style:italic; font-size:clamp(17px,2vw,24px); line-height:1.5; color:#d8d0c1; max-width:52ch; margin-left:auto; margin-right:auto;">…with a global community of more than 1,400 participants, from 66 countries, across six continents.</div>
+
+      <div data-reveal style="margin-top:clamp(44px,6vw,72px); padding-top:clamp(28px,4vw,44px); border-top:1px solid rgba(237,231,218,0.14);">
+        <div style="font-family:'Newsreader',serif; font-size:clamp(22px,3vw,34px); letter-spacing:-0.01em;">Centre de Recerca Matemàtica</div>
+        <div style="font-family:'Space Mono',monospace; font-size:11.5px; letter-spacing:0.12em; line-height:2; color:#8a7f70; margin-top:14px;">Bellaterra Campus (UAB) · 08193 Cerdanyola del Vallès · <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8eedfce3ceedfce3a0edeffa">[email&#160;protected]</a><br>A CERCA centre · ERCOM member · María de Maeztu Unit of Excellence<br>CC BY-SA 4.0 · MMXXV</div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+(function(){
+var GROUPS = [
+      { i: "01", name: "Algebra and Algebraic Geometry", focus: "Non-commutative and commutative algebra, moduli spaces, Arakelov geometry and abelian varieties.", pubs: 12,
+        members: ["Josep Alvarez","Jaume Amorós","Ramon Antoine","Florent Balacheff","Guillem Blanco","Carlos d'Andrea","Javier J. Gutiérrez","Dolors Herbera","Joachim Kock","Martí Lahoz","Simone Marchesi","Rosa Maria Miró","Joan Carles Naranjo","Francesc Perera","Martín Sombra"],
+        extra: "+ 1 PhD student",
+        projects: ["Birational Geometry, Group Actions & Moduli Spaces — MICINN (2024–2028)"] },
+      { i: "02", name: "Geometry and Topology", focus: "Differential and symplectic geometry, algebraic topology — including an abstract \u201Cfluid computer.\u201D", pubs: 8,
+        members: ["Miguel Ángel Barja","Carles Broto","Robert Cardona","Natàlia Castellana","Joana Cirici","Immaculada Gálvez","Marta Mazzocco","Eva Miranda","Ignasi Mundet","Wolfgang Pitsch","Joan Porti","Gil Solanes"],
+        extra: "+ 2 PhD students · 3 theses defended",
+        projects: ["INTERGAP — Interactions of geometry with algebra","AQUACELL — Celestial mechanics, hydrodynamics & Turing machines","SymHyCon — symplectic topology, hydrodynamics & conservative flows","SYGHOC — group theory, homotopy theory & combinatorics"] },
+      { i: "03", name: "Number Theory", focus: "Deep arithmetic phenomena through the lens of the Langlands Program — Galois representations, automorphic forms and abelian varieties.", pubs: 8,
+        members: ["Francesc Bars","Paloma Bengoechea","Luis Dieulefait","Francesc Fité","Xavier Guitart","Marc Masdeu","Víctor Rotger"],
+        extra: "+ 1 postdoc · 1 PhD · 1 thesis defended",
+        projects: ["Non-archimedean valuations in geometry & explicit number theory","Geometry over monoids and semirings"] },
+      { i: "04", name: "Mathematical and Computational Biology", focus: "New theory, models and tools for biologists and clinicians — multiscale models, dynamical systems and machine learning.", pubs: 9,
+        members: ["Tomás Alarcón","Marta Casanellas","Sílvia Cuadrado","Gissell Estrada-Rodríguez","Jesús Fernández","Eric Latorre","Josep Sardanyés"],
+        extra: "+ 3 postdocs · 4 PhD · 2 theses defended",
+        projects: ["MATH-TIPDIS — tipping points & warning signals in complex diseases","AITIGsA — AI-guided therapeutic interfering genomes"] },
+      { i: "05", name: "Computational and Mathematical Neuroscience", focus: "Systems-level neuroscience: how large assemblies of interacting neurons give rise to animal and human behaviour.", pubs: 11,
+        members: ["Toni Guillamón","Gemma Huguet","Alexandre Hyafil","Manuel Molano","Adrián Ponce","Àlex Roxin","Diego Vidaurre","Klaus Wimmer"],
+        extra: "+ 8 postdocs · 7 PhD · 1 thesis defended",
+        projects: ["Neural mechanisms of perceptual decision making & working memory","The role of cell types in critical neural activity","ATRAE Project — Diego Vidaurre"] },
+      { i: "06", name: "Mathematics for the Environment and Society", focus: "Mathematical and statistical techniques for natural hazards, climate and the capture of environmental contaminants.", pubs: 9,
+        members: ["Álvaro Corral","Marc Calvo","David Moriña","Timothy G. Myers","Pere Puig"],
+        extra: "+ 3 postdocs · 1 PhD · 3 theses defended",
+        projects: ["Statistical modelling of extreme events & health risks — MINECO (2024–2026)","Capture of environmental contaminants by adsorption"] },
+      { i: "07", name: "Analysis", focus: "Classical analysis at the interaction of complex and harmonic analysis with geometric measure theory, PDEs and probability.", pubs: 22,
+        members: ["Jorge Antezana","Carme Cascante","Albert Clop","Egor Kosov","Jordi Marzo","Joan Mateu","Artur Nicolau","Joaquim Ortega","Jordi Pau","Olli Saari","Sergey Tikhonov","Xavier Tolsa"],
+        extra: "+ 3 postdocs · 1 PhD · 3 theses defended",
+        projects: ["Several complex variables & optimal distribution of points","Analytic function spaces & operators"] },
+      { i: "08", name: "Partial Differential Equations", focus: "Regularity of nonlinear PDE, free boundary problems, minimal surfaces and nonlocal equations from probability and physics.", pubs: 11,
+        members: ["Xavier Cabré","Gyula Csató","Albert Mas","Xavier Ros-Oton","Tomás Sanz"],
+        extra: "+ 1 postdoc · 1 PhD",
+        projects: ["SSNSD — ERC Consolidator: stable solutions & nonstandard diffusions (2024–2029)","PDE in Physics and Analysis — AEI (2025–2028)","Reaction–diffusion & integro-differential equations"] },
+      { i: "09", name: "Dynamical Systems", focus: "Invariant objects and their connections, with applications in celestial mechanics, astrodynamics, neuroscience and chemistry.", pubs: 34,
+        members: ["Inmaculada Baldomá","Andrew Clarke","Jezabel Curbelo","Amadeu Delshams","Kostiantyn Drach","Núria Fagella","Ernest Fontich","Marcel Guardia","Alejandro Haro","Xavier Jarque","Àngel Jorba","José Tomás Lázaro","Pau Martín","M. Teresa Martínez-Seara","Josep Masdemont","Mercè Ollé","Joan Torregrosa","Arturo Vieiro"],
+        extra: "+ 2 postdocs · 1 PhD · 4 theses defended",
+        projects: ["RACIMCEL — invariant manifolds & celestial mechanics","IMHNEA — Hamiltonian systems in neuroscience, epidemiology & atmosphere","ICREA Academia 2023 — Marcel Guardia"] },
+      { i: "10", name: "Combinatorics and Mathematics of Computer Science", focus: "Discrete mathematics, theoretical computer science and mathematical logic — from graph theory to computational complexity.", pubs: 16,
+        members: ["Albert Atserias","Simeon Ball","Kolja Knauer","Richard Lang","Marc Noy","Arnau Padrol","Guillem Perarnau","Vincent Pilaud","Juan José Rué","Oriol Serra","Lluís Vena"],
+        extra: "+ 1 postdoc · 1 PhD",
+        projects: ["COCOA — Contemporary Combinatorics & its Applications","COMPOTE — Combinatorial Polytope Theory","SRC-ExCo — Structure, Randomness & Computational Methods in Extremal Combinatorics","Geometry & Algebra in Combinatorics"] }
+    ];
+var reveals=[].slice.call(document.querySelectorAll('[data-reveal]'));
+reveals.forEach(function(el){el.style.opacity='0';el.style.transform='translateY(26px)';var d=el.getAttribute('data-delay')||0;el.style.transition='opacity .9s cubic-bezier(.2,.7,.2,1) '+d+'ms, transform .9s cubic-bezier(.2,.7,.2,1) '+d+'ms';});
+if('IntersectionObserver' in window){var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='none';ro.unobserve(e.target);}});},{threshold:0.12,rootMargin:'0px 0px -8% 0px'});reveals.forEach(function(el){ro.observe(el);});}else{reveals.forEach(function(el){el.style.opacity='1';el.style.transform='none';});}
+var counters=[].slice.call(document.querySelectorAll('[data-count]'));
+function runCount(el){var target=parseFloat(el.getAttribute('data-count'));var dec=parseInt(el.getAttribute('data-decimals')||'0',10);var pre=el.getAttribute('data-prefix')||'';var suf=el.getAttribute('data-suffix')||'';var t0=performance.now();function fmt(v){var s=dec?v.toFixed(dec):Math.round(v).toLocaleString('en-US');return pre+s+suf;}function tick(now){var p=Math.min(1,(now-t0)/1500);var e=1-Math.pow(1-p,3);el.textContent=fmt(target*e);if(p<1)requestAnimationFrame(tick);else el.textContent=fmt(target);}requestAnimationFrame(tick);}
+if('IntersectionObserver' in window){var co=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){runCount(e.target);co.unobserve(e.target);}});},{threshold:0.4});counters.forEach(function(el){co.observe(el);});}else{counters.forEach(runCount);}
+var px=[].slice.call(document.querySelectorAll('[data-parallax]'));var ticking=false;
+function onScroll(){if(ticking)return;ticking=true;requestAnimationFrame(function(){var vh=window.innerHeight;px.forEach(function(el){var r=el.getBoundingClientRect();var sp=parseFloat(el.getAttribute('data-parallax'))||0.1;var off=(r.top+r.height/2-vh/2);el.style.transform='translateY('+(-off*sp).toFixed(1)+'px)';});ticking=false;});}
+window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+function openModal(g){var ov=document.createElement('div');ov.setAttribute('style','position:fixed;inset:0;z-index:100000;background:rgba(15,13,10,0.58);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);display:flex;align-items:flex-start;justify-content:center;padding:clamp(16px,5vh,64px) 18px;overflow-y:auto;');
+var chips=g.members.map(function(m){return '<span style="border:1px solid rgba(23,20,15,0.16);background:#F2EEE4;border-radius:100px;padding:6px 14px;font-size:13px;color:#17140F;">'+m+'</span>';}).join('');
+var projs=g.projects.map(function(p){return '<li style="display:flex;gap:12px;font-size:14.5px;line-height:1.5;color:#3a352d;"><span style="color:#9A2A34;font-family:&quot;Space Mono&quot;,monospace;flex:none;">&mdash;</span><span>'+p+'</span></li>';}).join('');
+ov.innerHTML='<div style="background:#FBFAF5;max-width:760px;width:100%;border-radius:8px;border-top:4px solid #9A2A34;padding:clamp(28px,4.5vw,52px);position:relative;box-shadow:0 30px 80px rgba(15,13,10,0.4);">'+'<button aria-label="Close" style="position:absolute;top:18px;right:18px;width:40px;height:40px;border-radius:50%;border:1px solid rgba(23,20,15,0.18);background:#F2EEE4;color:#17140F;font-size:20px;line-height:1;cursor:pointer;">&times;</button>'+'<div style="font-family:&quot;Space Mono&quot;,monospace;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:#9A2A34;margin-bottom:12px;">Research group '+g.i+'</div>'+'<h3 style="font-family:&quot;Newsreader&quot;,serif;font-weight:400;font-size:clamp(26px,3.6vw,42px);line-height:1.04;letter-spacing:-0.02em;margin:0 0 16px;max-width:16ch;">'+g.name+'</h3>'+'<p style="font-size:16px;line-height:1.6;color:#4A443B;margin:0 0 28px;max-width:60ch;">'+g.focus+'</p>'+'<div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:32px;"><div style="background:#9A2A34;color:#F7F1EA;border-radius:6px;padding:14px 22px;"><div style="font-family:&quot;Space Mono&quot;,monospace;font-weight:700;font-size:28px;line-height:1;">'+g.pubs+'</div><div style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;margin-top:6px;color:rgba(247,241,234,0.75);">Publications</div></div><div style="background:#17140F;color:#F2EEE4;border-radius:6px;padding:14px 22px;"><div style="font-family:&quot;Space Mono&quot;,monospace;font-weight:700;font-size:28px;line-height:1;">'+g.members.length+'</div><div style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;margin-top:6px;color:rgba(242,238,228,0.6);">Researchers</div></div></div>'+'<div style="font-family:&quot;Space Mono&quot;,monospace;font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#9A2A34;margin-bottom:14px;">Senior researchers</div>'+'<div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px;">'+chips+'</div>'+'<p style="font-size:13px;color:#8a5a5f;margin:6px 0 30px;font-family:&quot;Space Mono&quot;,monospace;letter-spacing:0.04em;">'+(g.extra||'')+'</p>'+'<div style="font-family:&quot;Space Mono&quot;,monospace;font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#9A2A34;margin-bottom:14px;">Selected projects</div>'+'<ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;">'+projs+'</ul>'+'</div>';
+function close(){if(ov.parentNode)ov.parentNode.removeChild(ov);document.removeEventListener('keydown',onKey);}
+function onKey(e){if(e.key==='Escape')close();}
+ov.addEventListener('click',function(e){if(e.target===ov)close();});
+ov.querySelector('button').addEventListener('click',close);
+document.addEventListener('keydown',onKey);document.body.appendChild(ov);}
+[].slice.call(document.querySelectorAll('.crm-gcard')).forEach(function(c){c.addEventListener('click',function(){openModal(GROUPS[parseInt(c.getAttribute('data-group'),10)]);});});
+})();
+</script>
+<script>
+(function(){function send(){try{parent.postMessage({crmReportHeight:document.documentElement.scrollHeight},"*");}catch(e){}}window.addEventListener("load",send);window.addEventListener("resize",send);setInterval(send,800);})();
+</script>
+</body>
+</html>
